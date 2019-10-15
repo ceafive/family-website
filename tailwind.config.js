@@ -8,8 +8,8 @@ module.exports = {
     extend: {
         colors: {
             appteal: '#1C2F2D',
-            appgold: '#d7b740',
-            appgold2: '#AB8D3F',
+            appgold: '#FFD700',
+            appgold2: '#d7b740',
                
         },
         fontSize: {

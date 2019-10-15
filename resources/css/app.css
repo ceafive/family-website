@@ -1090,11 +1090,11 @@ video {
 }
 
 .bg-appgold {
-  background-color: #d7b740;
+  background-color: #FFD700;
 }
 
 .bg-appgold2 {
-  background-color: #AB8D3F;
+  background-color: #d7b740;
 }
 
 .hover\:bg-transparent:hover {
@@ -1474,11 +1474,11 @@ video {
 }
 
 .hover\:bg-appgold:hover {
-  background-color: #d7b740;
+  background-color: #FFD700;
 }
 
 .hover\:bg-appgold2:hover {
-  background-color: #AB8D3F;
+  background-color: #d7b740;
 }
 
 .focus\:bg-transparent:focus {
@@ -1858,11 +1858,11 @@ video {
 }
 
 .focus\:bg-appgold:focus {
-  background-color: #d7b740;
+  background-color: #FFD700;
 }
 
 .focus\:bg-appgold2:focus {
-  background-color: #AB8D3F;
+  background-color: #d7b740;
 }
 
 .bg-bottom {
@@ -2322,11 +2322,11 @@ video {
 }
 
 .border-appgold {
-  border-color: #d7b740;
+  border-color: #FFD700;
 }
 
 .border-appgold2 {
-  border-color: #AB8D3F;
+  border-color: #d7b740;
 }
 
 .hover\:border-transparent:hover {
@@ -2706,11 +2706,11 @@ video {
 }
 
 .hover\:border-appgold:hover {
-  border-color: #d7b740;
+  border-color: #FFD700;
 }
 
 .hover\:border-appgold2:hover {
-  border-color: #AB8D3F;
+  border-color: #d7b740;
 }
 
 .focus\:border-transparent:focus {
@@ -3090,11 +3090,11 @@ video {
 }
 
 .focus\:border-appgold:focus {
-  border-color: #d7b740;
+  border-color: #FFD700;
 }
 
 .focus\:border-appgold2:focus {
-  border-color: #AB8D3F;
+  border-color: #d7b740;
 }
 
 .rounded-none {
@@ -8372,43 +8372,43 @@ video {
 }
 
 .placeholder-appgold::-webkit-input-placeholder {
-  color: #d7b740;
+  color: #FFD700;
 }
 
 .placeholder-appgold::-moz-placeholder {
-  color: #d7b740;
+  color: #FFD700;
 }
 
 .placeholder-appgold:-ms-input-placeholder {
-  color: #d7b740;
+  color: #FFD700;
 }
 
 .placeholder-appgold::-ms-input-placeholder {
-  color: #d7b740;
+  color: #FFD700;
 }
 
 .placeholder-appgold::placeholder {
-  color: #d7b740;
+  color: #FFD700;
 }
 
 .placeholder-appgold2::-webkit-input-placeholder {
-  color: #AB8D3F;
+  color: #d7b740;
 }
 
 .placeholder-appgold2::-moz-placeholder {
-  color: #AB8D3F;
+  color: #d7b740;
 }
 
 .placeholder-appgold2:-ms-input-placeholder {
-  color: #AB8D3F;
+  color: #d7b740;
 }
 
 .placeholder-appgold2::-ms-input-placeholder {
-  color: #AB8D3F;
+  color: #d7b740;
 }
 
 .placeholder-appgold2::placeholder {
-  color: #AB8D3F;
+  color: #d7b740;
 }
 
 .focus\:placeholder-transparent:focus::-webkit-input-placeholder {
@@ -10292,43 +10292,43 @@ video {
 }
 
 .focus\:placeholder-appgold:focus::-webkit-input-placeholder {
-  color: #d7b740;
+  color: #FFD700;
 }
 
 .focus\:placeholder-appgold:focus::-moz-placeholder {
-  color: #d7b740;
+  color: #FFD700;
 }
 
 .focus\:placeholder-appgold:focus:-ms-input-placeholder {
-  color: #d7b740;
+  color: #FFD700;
 }
 
 .focus\:placeholder-appgold:focus::-ms-input-placeholder {
-  color: #d7b740;
+  color: #FFD700;
 }
 
 .focus\:placeholder-appgold:focus::placeholder {
-  color: #d7b740;
+  color: #FFD700;
 }
 
 .focus\:placeholder-appgold2:focus::-webkit-input-placeholder {
-  color: #AB8D3F;
+  color: #d7b740;
 }
 
 .focus\:placeholder-appgold2:focus::-moz-placeholder {
-  color: #AB8D3F;
+  color: #d7b740;
 }
 
 .focus\:placeholder-appgold2:focus:-ms-input-placeholder {
-  color: #AB8D3F;
+  color: #d7b740;
 }
 
 .focus\:placeholder-appgold2:focus::-ms-input-placeholder {
-  color: #AB8D3F;
+  color: #d7b740;
 }
 
 .focus\:placeholder-appgold2:focus::placeholder {
-  color: #AB8D3F;
+  color: #d7b740;
 }
 
 .pointer-events-none {
@@ -10947,11 +10947,11 @@ video {
 }
 
 .text-appgold {
-  color: #d7b740;
+  color: #FFD700;
 }
 
 .text-appgold2 {
-  color: #AB8D3F;
+  color: #d7b740;
 }
 
 .hover\:text-transparent:hover {
@@ -11331,11 +11331,11 @@ video {
 }
 
 .hover\:text-appgold:hover {
-  color: #d7b740;
+  color: #FFD700;
 }
 
 .hover\:text-appgold2:hover {
-  color: #AB8D3F;
+  color: #d7b740;
 }
 
 .focus\:text-transparent:focus {
@@ -11715,11 +11715,11 @@ video {
 }
 
 .focus\:text-appgold:focus {
-  color: #d7b740;
+  color: #FFD700;
 }
 
 .focus\:text-appgold2:focus {
-  color: #AB8D3F;
+  color: #d7b740;
 }
 
 .text-xs {
@@ -12649,11 +12649,11 @@ video {
   }
 
   .xxs\:bg-appgold {
-    background-color: #d7b740;
+    background-color: #FFD700;
   }
 
   .xxs\:bg-appgold2 {
-    background-color: #AB8D3F;
+    background-color: #d7b740;
   }
 
   .xxs\:hover\:bg-transparent:hover {
@@ -13033,11 +13033,11 @@ video {
   }
 
   .xxs\:hover\:bg-appgold:hover {
-    background-color: #d7b740;
+    background-color: #FFD700;
   }
 
   .xxs\:hover\:bg-appgold2:hover {
-    background-color: #AB8D3F;
+    background-color: #d7b740;
   }
 
   .xxs\:focus\:bg-transparent:focus {
@@ -13417,11 +13417,11 @@ video {
   }
 
   .xxs\:focus\:bg-appgold:focus {
-    background-color: #d7b740;
+    background-color: #FFD700;
   }
 
   .xxs\:focus\:bg-appgold2:focus {
-    background-color: #AB8D3F;
+    background-color: #d7b740;
   }
 
   .xxs\:bg-bottom {
@@ -13881,11 +13881,11 @@ video {
   }
 
   .xxs\:border-appgold {
-    border-color: #d7b740;
+    border-color: #FFD700;
   }
 
   .xxs\:border-appgold2 {
-    border-color: #AB8D3F;
+    border-color: #d7b740;
   }
 
   .xxs\:hover\:border-transparent:hover {
@@ -14265,11 +14265,11 @@ video {
   }
 
   .xxs\:hover\:border-appgold:hover {
-    border-color: #d7b740;
+    border-color: #FFD700;
   }
 
   .xxs\:hover\:border-appgold2:hover {
-    border-color: #AB8D3F;
+    border-color: #d7b740;
   }
 
   .xxs\:focus\:border-transparent:focus {
@@ -14649,11 +14649,11 @@ video {
   }
 
   .xxs\:focus\:border-appgold:focus {
-    border-color: #d7b740;
+    border-color: #FFD700;
   }
 
   .xxs\:focus\:border-appgold2:focus {
-    border-color: #AB8D3F;
+    border-color: #d7b740;
   }
 
   .xxs\:rounded-none {
@@ -19931,43 +19931,43 @@ video {
   }
 
   .xxs\:placeholder-appgold::-webkit-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xxs\:placeholder-appgold::-moz-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xxs\:placeholder-appgold:-ms-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xxs\:placeholder-appgold::-ms-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xxs\:placeholder-appgold::placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xxs\:placeholder-appgold2::-webkit-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xxs\:placeholder-appgold2::-moz-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xxs\:placeholder-appgold2:-ms-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xxs\:placeholder-appgold2::-ms-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xxs\:placeholder-appgold2::placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xxs\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
@@ -21851,43 +21851,43 @@ video {
   }
 
   .xxs\:focus\:placeholder-appgold:focus::-webkit-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xxs\:focus\:placeholder-appgold:focus::-moz-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xxs\:focus\:placeholder-appgold:focus:-ms-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xxs\:focus\:placeholder-appgold:focus::-ms-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xxs\:focus\:placeholder-appgold:focus::placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xxs\:focus\:placeholder-appgold2:focus::-webkit-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xxs\:focus\:placeholder-appgold2:focus::-moz-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xxs\:focus\:placeholder-appgold2:focus:-ms-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xxs\:focus\:placeholder-appgold2:focus::-ms-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xxs\:focus\:placeholder-appgold2:focus::placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xxs\:pointer-events-none {
@@ -22506,11 +22506,11 @@ video {
   }
 
   .xxs\:text-appgold {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xxs\:text-appgold2 {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xxs\:hover\:text-transparent:hover {
@@ -22890,11 +22890,11 @@ video {
   }
 
   .xxs\:hover\:text-appgold:hover {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xxs\:hover\:text-appgold2:hover {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xxs\:focus\:text-transparent:focus {
@@ -23274,11 +23274,11 @@ video {
   }
 
   .xxs\:focus\:text-appgold:focus {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xxs\:focus\:text-appgold2:focus {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xxs\:text-xs {
@@ -24209,11 +24209,11 @@ video {
   }
 
   .xs\:bg-appgold {
-    background-color: #d7b740;
+    background-color: #FFD700;
   }
 
   .xs\:bg-appgold2 {
-    background-color: #AB8D3F;
+    background-color: #d7b740;
   }
 
   .xs\:hover\:bg-transparent:hover {
@@ -24593,11 +24593,11 @@ video {
   }
 
   .xs\:hover\:bg-appgold:hover {
-    background-color: #d7b740;
+    background-color: #FFD700;
   }
 
   .xs\:hover\:bg-appgold2:hover {
-    background-color: #AB8D3F;
+    background-color: #d7b740;
   }
 
   .xs\:focus\:bg-transparent:focus {
@@ -24977,11 +24977,11 @@ video {
   }
 
   .xs\:focus\:bg-appgold:focus {
-    background-color: #d7b740;
+    background-color: #FFD700;
   }
 
   .xs\:focus\:bg-appgold2:focus {
-    background-color: #AB8D3F;
+    background-color: #d7b740;
   }
 
   .xs\:bg-bottom {
@@ -25441,11 +25441,11 @@ video {
   }
 
   .xs\:border-appgold {
-    border-color: #d7b740;
+    border-color: #FFD700;
   }
 
   .xs\:border-appgold2 {
-    border-color: #AB8D3F;
+    border-color: #d7b740;
   }
 
   .xs\:hover\:border-transparent:hover {
@@ -25825,11 +25825,11 @@ video {
   }
 
   .xs\:hover\:border-appgold:hover {
-    border-color: #d7b740;
+    border-color: #FFD700;
   }
 
   .xs\:hover\:border-appgold2:hover {
-    border-color: #AB8D3F;
+    border-color: #d7b740;
   }
 
   .xs\:focus\:border-transparent:focus {
@@ -26209,11 +26209,11 @@ video {
   }
 
   .xs\:focus\:border-appgold:focus {
-    border-color: #d7b740;
+    border-color: #FFD700;
   }
 
   .xs\:focus\:border-appgold2:focus {
-    border-color: #AB8D3F;
+    border-color: #d7b740;
   }
 
   .xs\:rounded-none {
@@ -31491,43 +31491,43 @@ video {
   }
 
   .xs\:placeholder-appgold::-webkit-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xs\:placeholder-appgold::-moz-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xs\:placeholder-appgold:-ms-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xs\:placeholder-appgold::-ms-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xs\:placeholder-appgold::placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xs\:placeholder-appgold2::-webkit-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xs\:placeholder-appgold2::-moz-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xs\:placeholder-appgold2:-ms-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xs\:placeholder-appgold2::-ms-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xs\:placeholder-appgold2::placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xs\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
@@ -33411,43 +33411,43 @@ video {
   }
 
   .xs\:focus\:placeholder-appgold:focus::-webkit-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xs\:focus\:placeholder-appgold:focus::-moz-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xs\:focus\:placeholder-appgold:focus:-ms-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xs\:focus\:placeholder-appgold:focus::-ms-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xs\:focus\:placeholder-appgold:focus::placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xs\:focus\:placeholder-appgold2:focus::-webkit-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xs\:focus\:placeholder-appgold2:focus::-moz-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xs\:focus\:placeholder-appgold2:focus:-ms-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xs\:focus\:placeholder-appgold2:focus::-ms-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xs\:focus\:placeholder-appgold2:focus::placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xs\:pointer-events-none {
@@ -34066,11 +34066,11 @@ video {
   }
 
   .xs\:text-appgold {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xs\:text-appgold2 {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xs\:hover\:text-transparent:hover {
@@ -34450,11 +34450,11 @@ video {
   }
 
   .xs\:hover\:text-appgold:hover {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xs\:hover\:text-appgold2:hover {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xs\:focus\:text-transparent:focus {
@@ -34834,11 +34834,11 @@ video {
   }
 
   .xs\:focus\:text-appgold:focus {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xs\:focus\:text-appgold2:focus {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xs\:text-xs {
@@ -35769,11 +35769,11 @@ video {
   }
 
   .sm\:bg-appgold {
-    background-color: #d7b740;
+    background-color: #FFD700;
   }
 
   .sm\:bg-appgold2 {
-    background-color: #AB8D3F;
+    background-color: #d7b740;
   }
 
   .sm\:hover\:bg-transparent:hover {
@@ -36153,11 +36153,11 @@ video {
   }
 
   .sm\:hover\:bg-appgold:hover {
-    background-color: #d7b740;
+    background-color: #FFD700;
   }
 
   .sm\:hover\:bg-appgold2:hover {
-    background-color: #AB8D3F;
+    background-color: #d7b740;
   }
 
   .sm\:focus\:bg-transparent:focus {
@@ -36537,11 +36537,11 @@ video {
   }
 
   .sm\:focus\:bg-appgold:focus {
-    background-color: #d7b740;
+    background-color: #FFD700;
   }
 
   .sm\:focus\:bg-appgold2:focus {
-    background-color: #AB8D3F;
+    background-color: #d7b740;
   }
 
   .sm\:bg-bottom {
@@ -37001,11 +37001,11 @@ video {
   }
 
   .sm\:border-appgold {
-    border-color: #d7b740;
+    border-color: #FFD700;
   }
 
   .sm\:border-appgold2 {
-    border-color: #AB8D3F;
+    border-color: #d7b740;
   }
 
   .sm\:hover\:border-transparent:hover {
@@ -37385,11 +37385,11 @@ video {
   }
 
   .sm\:hover\:border-appgold:hover {
-    border-color: #d7b740;
+    border-color: #FFD700;
   }
 
   .sm\:hover\:border-appgold2:hover {
-    border-color: #AB8D3F;
+    border-color: #d7b740;
   }
 
   .sm\:focus\:border-transparent:focus {
@@ -37769,11 +37769,11 @@ video {
   }
 
   .sm\:focus\:border-appgold:focus {
-    border-color: #d7b740;
+    border-color: #FFD700;
   }
 
   .sm\:focus\:border-appgold2:focus {
-    border-color: #AB8D3F;
+    border-color: #d7b740;
   }
 
   .sm\:rounded-none {
@@ -43051,43 +43051,43 @@ video {
   }
 
   .sm\:placeholder-appgold::-webkit-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .sm\:placeholder-appgold::-moz-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .sm\:placeholder-appgold:-ms-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .sm\:placeholder-appgold::-ms-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .sm\:placeholder-appgold::placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .sm\:placeholder-appgold2::-webkit-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .sm\:placeholder-appgold2::-moz-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .sm\:placeholder-appgold2:-ms-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .sm\:placeholder-appgold2::-ms-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .sm\:placeholder-appgold2::placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .sm\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
@@ -44971,43 +44971,43 @@ video {
   }
 
   .sm\:focus\:placeholder-appgold:focus::-webkit-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .sm\:focus\:placeholder-appgold:focus::-moz-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .sm\:focus\:placeholder-appgold:focus:-ms-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .sm\:focus\:placeholder-appgold:focus::-ms-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .sm\:focus\:placeholder-appgold:focus::placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .sm\:focus\:placeholder-appgold2:focus::-webkit-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .sm\:focus\:placeholder-appgold2:focus::-moz-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .sm\:focus\:placeholder-appgold2:focus:-ms-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .sm\:focus\:placeholder-appgold2:focus::-ms-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .sm\:focus\:placeholder-appgold2:focus::placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .sm\:pointer-events-none {
@@ -45626,11 +45626,11 @@ video {
   }
 
   .sm\:text-appgold {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .sm\:text-appgold2 {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .sm\:hover\:text-transparent:hover {
@@ -46010,11 +46010,11 @@ video {
   }
 
   .sm\:hover\:text-appgold:hover {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .sm\:hover\:text-appgold2:hover {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .sm\:focus\:text-transparent:focus {
@@ -46394,11 +46394,11 @@ video {
   }
 
   .sm\:focus\:text-appgold:focus {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .sm\:focus\:text-appgold2:focus {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .sm\:text-xs {
@@ -47329,11 +47329,11 @@ video {
   }
 
   .md\:bg-appgold {
-    background-color: #d7b740;
+    background-color: #FFD700;
   }
 
   .md\:bg-appgold2 {
-    background-color: #AB8D3F;
+    background-color: #d7b740;
   }
 
   .md\:hover\:bg-transparent:hover {
@@ -47713,11 +47713,11 @@ video {
   }
 
   .md\:hover\:bg-appgold:hover {
-    background-color: #d7b740;
+    background-color: #FFD700;
   }
 
   .md\:hover\:bg-appgold2:hover {
-    background-color: #AB8D3F;
+    background-color: #d7b740;
   }
 
   .md\:focus\:bg-transparent:focus {
@@ -48097,11 +48097,11 @@ video {
   }
 
   .md\:focus\:bg-appgold:focus {
-    background-color: #d7b740;
+    background-color: #FFD700;
   }
 
   .md\:focus\:bg-appgold2:focus {
-    background-color: #AB8D3F;
+    background-color: #d7b740;
   }
 
   .md\:bg-bottom {
@@ -48561,11 +48561,11 @@ video {
   }
 
   .md\:border-appgold {
-    border-color: #d7b740;
+    border-color: #FFD700;
   }
 
   .md\:border-appgold2 {
-    border-color: #AB8D3F;
+    border-color: #d7b740;
   }
 
   .md\:hover\:border-transparent:hover {
@@ -48945,11 +48945,11 @@ video {
   }
 
   .md\:hover\:border-appgold:hover {
-    border-color: #d7b740;
+    border-color: #FFD700;
   }
 
   .md\:hover\:border-appgold2:hover {
-    border-color: #AB8D3F;
+    border-color: #d7b740;
   }
 
   .md\:focus\:border-transparent:focus {
@@ -49329,11 +49329,11 @@ video {
   }
 
   .md\:focus\:border-appgold:focus {
-    border-color: #d7b740;
+    border-color: #FFD700;
   }
 
   .md\:focus\:border-appgold2:focus {
-    border-color: #AB8D3F;
+    border-color: #d7b740;
   }
 
   .md\:rounded-none {
@@ -54611,43 +54611,43 @@ video {
   }
 
   .md\:placeholder-appgold::-webkit-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .md\:placeholder-appgold::-moz-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .md\:placeholder-appgold:-ms-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .md\:placeholder-appgold::-ms-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .md\:placeholder-appgold::placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .md\:placeholder-appgold2::-webkit-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .md\:placeholder-appgold2::-moz-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .md\:placeholder-appgold2:-ms-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .md\:placeholder-appgold2::-ms-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .md\:placeholder-appgold2::placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .md\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
@@ -56531,43 +56531,43 @@ video {
   }
 
   .md\:focus\:placeholder-appgold:focus::-webkit-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .md\:focus\:placeholder-appgold:focus::-moz-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .md\:focus\:placeholder-appgold:focus:-ms-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .md\:focus\:placeholder-appgold:focus::-ms-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .md\:focus\:placeholder-appgold:focus::placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .md\:focus\:placeholder-appgold2:focus::-webkit-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .md\:focus\:placeholder-appgold2:focus::-moz-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .md\:focus\:placeholder-appgold2:focus:-ms-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .md\:focus\:placeholder-appgold2:focus::-ms-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .md\:focus\:placeholder-appgold2:focus::placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .md\:pointer-events-none {
@@ -57186,11 +57186,11 @@ video {
   }
 
   .md\:text-appgold {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .md\:text-appgold2 {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .md\:hover\:text-transparent:hover {
@@ -57570,11 +57570,11 @@ video {
   }
 
   .md\:hover\:text-appgold:hover {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .md\:hover\:text-appgold2:hover {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .md\:focus\:text-transparent:focus {
@@ -57954,11 +57954,11 @@ video {
   }
 
   .md\:focus\:text-appgold:focus {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .md\:focus\:text-appgold2:focus {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .md\:text-xs {
@@ -58889,11 +58889,11 @@ video {
   }
 
   .lg\:bg-appgold {
-    background-color: #d7b740;
+    background-color: #FFD700;
   }
 
   .lg\:bg-appgold2 {
-    background-color: #AB8D3F;
+    background-color: #d7b740;
   }
 
   .lg\:hover\:bg-transparent:hover {
@@ -59273,11 +59273,11 @@ video {
   }
 
   .lg\:hover\:bg-appgold:hover {
-    background-color: #d7b740;
+    background-color: #FFD700;
   }
 
   .lg\:hover\:bg-appgold2:hover {
-    background-color: #AB8D3F;
+    background-color: #d7b740;
   }
 
   .lg\:focus\:bg-transparent:focus {
@@ -59657,11 +59657,11 @@ video {
   }
 
   .lg\:focus\:bg-appgold:focus {
-    background-color: #d7b740;
+    background-color: #FFD700;
   }
 
   .lg\:focus\:bg-appgold2:focus {
-    background-color: #AB8D3F;
+    background-color: #d7b740;
   }
 
   .lg\:bg-bottom {
@@ -60121,11 +60121,11 @@ video {
   }
 
   .lg\:border-appgold {
-    border-color: #d7b740;
+    border-color: #FFD700;
   }
 
   .lg\:border-appgold2 {
-    border-color: #AB8D3F;
+    border-color: #d7b740;
   }
 
   .lg\:hover\:border-transparent:hover {
@@ -60505,11 +60505,11 @@ video {
   }
 
   .lg\:hover\:border-appgold:hover {
-    border-color: #d7b740;
+    border-color: #FFD700;
   }
 
   .lg\:hover\:border-appgold2:hover {
-    border-color: #AB8D3F;
+    border-color: #d7b740;
   }
 
   .lg\:focus\:border-transparent:focus {
@@ -60889,11 +60889,11 @@ video {
   }
 
   .lg\:focus\:border-appgold:focus {
-    border-color: #d7b740;
+    border-color: #FFD700;
   }
 
   .lg\:focus\:border-appgold2:focus {
-    border-color: #AB8D3F;
+    border-color: #d7b740;
   }
 
   .lg\:rounded-none {
@@ -66171,43 +66171,43 @@ video {
   }
 
   .lg\:placeholder-appgold::-webkit-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .lg\:placeholder-appgold::-moz-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .lg\:placeholder-appgold:-ms-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .lg\:placeholder-appgold::-ms-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .lg\:placeholder-appgold::placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .lg\:placeholder-appgold2::-webkit-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .lg\:placeholder-appgold2::-moz-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .lg\:placeholder-appgold2:-ms-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .lg\:placeholder-appgold2::-ms-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .lg\:placeholder-appgold2::placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .lg\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
@@ -68091,43 +68091,43 @@ video {
   }
 
   .lg\:focus\:placeholder-appgold:focus::-webkit-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .lg\:focus\:placeholder-appgold:focus::-moz-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .lg\:focus\:placeholder-appgold:focus:-ms-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .lg\:focus\:placeholder-appgold:focus::-ms-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .lg\:focus\:placeholder-appgold:focus::placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .lg\:focus\:placeholder-appgold2:focus::-webkit-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .lg\:focus\:placeholder-appgold2:focus::-moz-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .lg\:focus\:placeholder-appgold2:focus:-ms-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .lg\:focus\:placeholder-appgold2:focus::-ms-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .lg\:focus\:placeholder-appgold2:focus::placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .lg\:pointer-events-none {
@@ -68746,11 +68746,11 @@ video {
   }
 
   .lg\:text-appgold {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .lg\:text-appgold2 {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .lg\:hover\:text-transparent:hover {
@@ -69130,11 +69130,11 @@ video {
   }
 
   .lg\:hover\:text-appgold:hover {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .lg\:hover\:text-appgold2:hover {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .lg\:focus\:text-transparent:focus {
@@ -69514,11 +69514,11 @@ video {
   }
 
   .lg\:focus\:text-appgold:focus {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .lg\:focus\:text-appgold2:focus {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .lg\:text-xs {
@@ -70449,11 +70449,11 @@ video {
   }
 
   .xl\:bg-appgold {
-    background-color: #d7b740;
+    background-color: #FFD700;
   }
 
   .xl\:bg-appgold2 {
-    background-color: #AB8D3F;
+    background-color: #d7b740;
   }
 
   .xl\:hover\:bg-transparent:hover {
@@ -70833,11 +70833,11 @@ video {
   }
 
   .xl\:hover\:bg-appgold:hover {
-    background-color: #d7b740;
+    background-color: #FFD700;
   }
 
   .xl\:hover\:bg-appgold2:hover {
-    background-color: #AB8D3F;
+    background-color: #d7b740;
   }
 
   .xl\:focus\:bg-transparent:focus {
@@ -71217,11 +71217,11 @@ video {
   }
 
   .xl\:focus\:bg-appgold:focus {
-    background-color: #d7b740;
+    background-color: #FFD700;
   }
 
   .xl\:focus\:bg-appgold2:focus {
-    background-color: #AB8D3F;
+    background-color: #d7b740;
   }
 
   .xl\:bg-bottom {
@@ -71681,11 +71681,11 @@ video {
   }
 
   .xl\:border-appgold {
-    border-color: #d7b740;
+    border-color: #FFD700;
   }
 
   .xl\:border-appgold2 {
-    border-color: #AB8D3F;
+    border-color: #d7b740;
   }
 
   .xl\:hover\:border-transparent:hover {
@@ -72065,11 +72065,11 @@ video {
   }
 
   .xl\:hover\:border-appgold:hover {
-    border-color: #d7b740;
+    border-color: #FFD700;
   }
 
   .xl\:hover\:border-appgold2:hover {
-    border-color: #AB8D3F;
+    border-color: #d7b740;
   }
 
   .xl\:focus\:border-transparent:focus {
@@ -72449,11 +72449,11 @@ video {
   }
 
   .xl\:focus\:border-appgold:focus {
-    border-color: #d7b740;
+    border-color: #FFD700;
   }
 
   .xl\:focus\:border-appgold2:focus {
-    border-color: #AB8D3F;
+    border-color: #d7b740;
   }
 
   .xl\:rounded-none {
@@ -77731,43 +77731,43 @@ video {
   }
 
   .xl\:placeholder-appgold::-webkit-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xl\:placeholder-appgold::-moz-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xl\:placeholder-appgold:-ms-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xl\:placeholder-appgold::-ms-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xl\:placeholder-appgold::placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xl\:placeholder-appgold2::-webkit-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xl\:placeholder-appgold2::-moz-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xl\:placeholder-appgold2:-ms-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xl\:placeholder-appgold2::-ms-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xl\:placeholder-appgold2::placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xl\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
@@ -79651,43 +79651,43 @@ video {
   }
 
   .xl\:focus\:placeholder-appgold:focus::-webkit-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xl\:focus\:placeholder-appgold:focus::-moz-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xl\:focus\:placeholder-appgold:focus:-ms-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xl\:focus\:placeholder-appgold:focus::-ms-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xl\:focus\:placeholder-appgold:focus::placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xl\:focus\:placeholder-appgold2:focus::-webkit-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xl\:focus\:placeholder-appgold2:focus::-moz-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xl\:focus\:placeholder-appgold2:focus:-ms-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xl\:focus\:placeholder-appgold2:focus::-ms-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xl\:focus\:placeholder-appgold2:focus::placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xl\:pointer-events-none {
@@ -80306,11 +80306,11 @@ video {
   }
 
   .xl\:text-appgold {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xl\:text-appgold2 {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xl\:hover\:text-transparent:hover {
@@ -80690,11 +80690,11 @@ video {
   }
 
   .xl\:hover\:text-appgold:hover {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xl\:hover\:text-appgold2:hover {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xl\:focus\:text-transparent:focus {
@@ -81074,11 +81074,11 @@ video {
   }
 
   .xl\:focus\:text-appgold:focus {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xl\:focus\:text-appgold2:focus {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xl\:text-xs {
@@ -82009,11 +82009,11 @@ video {
   }
 
   .xl2\:bg-appgold {
-    background-color: #d7b740;
+    background-color: #FFD700;
   }
 
   .xl2\:bg-appgold2 {
-    background-color: #AB8D3F;
+    background-color: #d7b740;
   }
 
   .xl2\:hover\:bg-transparent:hover {
@@ -82393,11 +82393,11 @@ video {
   }
 
   .xl2\:hover\:bg-appgold:hover {
-    background-color: #d7b740;
+    background-color: #FFD700;
   }
 
   .xl2\:hover\:bg-appgold2:hover {
-    background-color: #AB8D3F;
+    background-color: #d7b740;
   }
 
   .xl2\:focus\:bg-transparent:focus {
@@ -82777,11 +82777,11 @@ video {
   }
 
   .xl2\:focus\:bg-appgold:focus {
-    background-color: #d7b740;
+    background-color: #FFD700;
   }
 
   .xl2\:focus\:bg-appgold2:focus {
-    background-color: #AB8D3F;
+    background-color: #d7b740;
   }
 
   .xl2\:bg-bottom {
@@ -83241,11 +83241,11 @@ video {
   }
 
   .xl2\:border-appgold {
-    border-color: #d7b740;
+    border-color: #FFD700;
   }
 
   .xl2\:border-appgold2 {
-    border-color: #AB8D3F;
+    border-color: #d7b740;
   }
 
   .xl2\:hover\:border-transparent:hover {
@@ -83625,11 +83625,11 @@ video {
   }
 
   .xl2\:hover\:border-appgold:hover {
-    border-color: #d7b740;
+    border-color: #FFD700;
   }
 
   .xl2\:hover\:border-appgold2:hover {
-    border-color: #AB8D3F;
+    border-color: #d7b740;
   }
 
   .xl2\:focus\:border-transparent:focus {
@@ -84009,11 +84009,11 @@ video {
   }
 
   .xl2\:focus\:border-appgold:focus {
-    border-color: #d7b740;
+    border-color: #FFD700;
   }
 
   .xl2\:focus\:border-appgold2:focus {
-    border-color: #AB8D3F;
+    border-color: #d7b740;
   }
 
   .xl2\:rounded-none {
@@ -89291,43 +89291,43 @@ video {
   }
 
   .xl2\:placeholder-appgold::-webkit-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xl2\:placeholder-appgold::-moz-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xl2\:placeholder-appgold:-ms-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xl2\:placeholder-appgold::-ms-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xl2\:placeholder-appgold::placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xl2\:placeholder-appgold2::-webkit-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xl2\:placeholder-appgold2::-moz-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xl2\:placeholder-appgold2:-ms-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xl2\:placeholder-appgold2::-ms-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xl2\:placeholder-appgold2::placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xl2\:focus\:placeholder-transparent:focus::-webkit-input-placeholder {
@@ -91211,43 +91211,43 @@ video {
   }
 
   .xl2\:focus\:placeholder-appgold:focus::-webkit-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xl2\:focus\:placeholder-appgold:focus::-moz-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xl2\:focus\:placeholder-appgold:focus:-ms-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xl2\:focus\:placeholder-appgold:focus::-ms-input-placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xl2\:focus\:placeholder-appgold:focus::placeholder {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xl2\:focus\:placeholder-appgold2:focus::-webkit-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xl2\:focus\:placeholder-appgold2:focus::-moz-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xl2\:focus\:placeholder-appgold2:focus:-ms-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xl2\:focus\:placeholder-appgold2:focus::-ms-input-placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xl2\:focus\:placeholder-appgold2:focus::placeholder {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xl2\:pointer-events-none {
@@ -91866,11 +91866,11 @@ video {
   }
 
   .xl2\:text-appgold {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xl2\:text-appgold2 {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xl2\:hover\:text-transparent:hover {
@@ -92250,11 +92250,11 @@ video {
   }
 
   .xl2\:hover\:text-appgold:hover {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xl2\:hover\:text-appgold2:hover {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xl2\:focus\:text-transparent:focus {
@@ -92634,11 +92634,11 @@ video {
   }
 
   .xl2\:focus\:text-appgold:focus {
-    color: #d7b740;
+    color: #FFD700;
   }
 
   .xl2\:focus\:text-appgold2:focus {
-    color: #AB8D3F;
+    color: #d7b740;
   }
 
   .xl2\:text-xs {
