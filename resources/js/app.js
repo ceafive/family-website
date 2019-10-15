@@ -38,3 +38,10 @@ let countDown = new Date('Dec 14, 2019 11:00:00').getTime(),
         }
     }, second)
 
+// Background audio script
+  window.onload=(e) => {
+    document.getElementById('player').play(e);
+    console.log('loaded');
+  }
+
+   
