@@ -51,12 +51,11 @@ button[0].addEventListener("click", function () {
 //Hiding first section and displaying second section
 const initial =  document.getElementById('initial');
 const landing =  document.getElementById('landing');
-initial.classList.add('animated', 'zoomOut');
-landing.classList.add('animated', 'zoomIn');
-
 
 
 initial.addEventListener('animationend', function() { 
+  initial.classList.add('animated', 'zoomOut');
+  landing.classList.add('animated', 'zoomIn');
   landing.classList.add('block');
   landing.classList.remove('hidden');
   initial.classList.add('hidden');
