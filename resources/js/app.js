@@ -43,6 +43,7 @@ var media = document.getElementById("player");
 document.addEventListener("click", function () {
   media.play();
   media.muted = false;
+  console.log("playing")
 })
 
    
