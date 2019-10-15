@@ -93137,8 +93137,6 @@ video {
 #landing {
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
 }
 
 #initial h1 {
