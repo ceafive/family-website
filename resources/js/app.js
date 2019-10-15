@@ -38,6 +38,3 @@ let countDown = new Date('Dec 14, 2019 11:00:00').getTime(),
         }
     }, second)
 
-
-
-
