@@ -4,7 +4,7 @@
   "description": "a family app",
   "main": "app.js",
   "scripts": {
-    "build:css": "tailwind build main.css -o resources/css/app.css",
+    "build:css": "postcss main.css -o resources/css/app.css",
     "watch": "watch \"npm run build:css\" ./"
   },
   "author": "castro agbo",
