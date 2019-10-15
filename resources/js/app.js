@@ -17,24 +17,24 @@ let countDown = new Date('Dec 14, 2019 11:00:00').getTime(),
         document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute));
         document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
         if (Math.floor((distance % (minute)) / second) < 2){
-          document.getElementById('secs').innerText = " sec"
+          document.getElementById('secs').innerText = "sec"
         } else {
-          document.getElementById('secs').innerText = " secs"
+          document.getElementById('secs').innerText = "secs"
         }
         if (Math.floor((distance % (hour)) / (minute)) < 2){
-          document.getElementById('mins').innerText = " minute"
+          document.getElementById('mins').innerText = "minute"
         } else {
-          document.getElementById('mins').innerText = " minutes"
+          document.getElementById('mins').innerText = "minutes"
         }
         if (Math.floor((distance % (day)) / (hour)) < 2){
-          document.getElementById('hrs').innerText = " hour"
+          document.getElementById('hrs').innerText = "hour"
         } else {
-          document.getElementById('hrs').innerText = " hours"
+          document.getElementById('hrs').innerText = "hours"
         }
         if (Math.floor(distance / (day)) < 2){
-          document.getElementById('day').innerText = " day"
+          document.getElementById('day').innerText = "day"
         } else {
-          document.getElementById('day').innerText = " days"
+          document.getElementById('day').innerText = "days"
         }
     }, second)
 
