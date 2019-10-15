@@ -4,12 +4,22 @@ const second = 1000,
       hour = minute * 60,
       day = hour * 24;
 
-let countDown = new Date('Dec 14, 2019 11:00:00').getTime(),
+let countDown = new Date('Dec 14, 2019 01:00:00').getTime(),
     x = setInterval(function() {
 
       let deadline = new Date().getTime(),
           distance = countDown - deadline;
-        //   console.log(Math.floor(distance/day));
+
+//Logic for running a function when the clock runs down to one month left
+      if (Math.floor(distance / (day)) <= 29){
+      document.getElementsByClassName('clock')[0].classList.add('hidden');
+      document.getElementsByTagName("button")[0].classList.add('cursor-pointer');
+      document.getElementsByTagName("button")[0].classList.remove('cursor-not-allowed');
+      clearInterval(x);
+      }
+      console.log(Math.floor(distance / (day)));
+          
+          
 
         document.getElementById('days').innerText = Math.floor(distance / (day));
         document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour));
@@ -37,22 +47,24 @@ let countDown = new Date('Dec 14, 2019 11:00:00').getTime(),
         }
     }, second)
 
+
 // Background audio script
 var media = document.getElementById("player");
 var button = document.getElementsByTagName("button");
 button[0].addEventListener("click", function () {
   media.play();
   media.muted = false;
-  console.log("playing")
+  console.log("audio playing")
   alert("Not yet active, check back again soon!")
 })
 
-//Hiding first section and displaying second section
+//Hiding first section and displaying second section after animation
 const initial =  document.getElementById('initial');
 const landing =  document.getElementById('landing');
 initial.classList.add('animated', 'zoomOut');
 
-let y = setTimeout(function() { 
+//Adding 4.6secs timeout before applying hidden and block classes to sections
+setTimeout(function() { 
   landing.classList.remove('hidden');
   landing.classList.add('animated', 'zoomIn');
   initial.classList.add('hidden');
