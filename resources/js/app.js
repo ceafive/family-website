@@ -40,10 +40,26 @@ let countDown = new Date('Dec 14, 2019 11:00:00').getTime(),
 
 // Background audio script
 var media = document.getElementById("player");
-document.addEventListener("click", function () {
+var button = document.getElementsByTagName("button");
+button[0].addEventListener("click", function () {
   media.play();
   media.muted = false;
   console.log("playing")
+  alert("Not yet active, check back again soon!")
 })
+
+//Hiding first section and displaying second section
+const initial =  document.getElementById('initial');
+const landing =  document.getElementById('landing');
+initial.classList.add('animated', 'zoomOut');
+landing.classList.add('animated', 'zoomIn');
+
+
+
+initial.addEventListener('animationend', function() { 
+  landing.classList.add('block');
+  landing.classList.remove('hidden');
+  initial.classList.add('hidden');
+ });
 
    
