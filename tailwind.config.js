@@ -8,7 +8,7 @@ module.exports = {
     extend: {
         colors: {
             appteal: '#1C2F2D',
-            appgold: '#FFD700',
+            appgold: '#D4AF37',
             appgold2: '#d7b740',
                
         },
