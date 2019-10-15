@@ -3,17 +3,14 @@ module.exports = {
     fontFamily: {
             'display': ['Playfair Display'],
             'body': ['Poiret One'],
-            'landing': ['Liu Jian Mao Cao'],
+            'landing': ['Sorts Mill Goudy'],
     },
     extend: {
         colors: {
-            appgrey: '#15151b',
             appteal: '#1C2F2D',
-            appteal2: '#2f4f4c',
             appgold: '#d7b740',
-            appgrey: '#B9B9BB',
-            appwhite: '#E8E9ED',
-            appred: '#ff1a21'   
+            appgold2: '#AB8D3F',
+               
         },
         fontSize: {
             '8xl': '5rem',
