@@ -42,7 +42,7 @@ let countDown = new Date('Dec 14, 2019 11:00:00').getTime(),
 
 
 var media = document.getElementById("player");
-document.addEventListener("scroll", function () {
+document.addEventListener("click", function () {
   media.play();
   media.muted = false;
 })
