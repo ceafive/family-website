@@ -10,6 +10,7 @@
 
 #landing {
   animation-duration: 1s;
+  animation-delay: 0.1s;
 }
 
 #initial h1 {

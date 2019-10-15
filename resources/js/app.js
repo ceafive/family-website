@@ -52,10 +52,10 @@ const initial =  document.getElementById('initial');
 const landing =  document.getElementById('landing');
 initial.classList.add('animated', 'zoomOut');
 
-initial.addEventListener('animationend', setTimeout(function() { 
+let y = setTimeout(function() { 
   landing.classList.remove('hidden');
   landing.classList.add('animated', 'zoomIn');
   initial.classList.add('hidden');
- }, 4600));
+ }, 4600);
 
    
