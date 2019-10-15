@@ -51,14 +51,17 @@ button[0].addEventListener("click", function () {
 //Hiding first section and displaying second section
 const initial =  document.getElementById('initial');
 const landing =  document.getElementById('landing');
+const body =  document.getElementsByTagName('body');
+body[0].classList.add('animated');
+initial.classList.add('animated', 'zoomOut');
 
 
-initial.addEventListener('animationend', function() { 
-  initial.classList.add('animated', 'zoomOut');
-  landing.classList.add('animated', 'zoomIn');
-  landing.classList.add('block');
+
+
+body[0].addEventListener('animationend', setTimeout(function() { 
   landing.classList.remove('hidden');
+  landing.classList.add('animated', 'zoomIn');
   initial.classList.add('hidden');
- });
+ }, 4500));
 
    
