@@ -62,6 +62,6 @@ body[0].addEventListener('animationend', setTimeout(function() {
   landing.classList.remove('hidden');
   landing.classList.add('animated', 'zoomIn');
   initial.classList.add('hidden');
- }, 4500));
+ }, 4600));
 
    
