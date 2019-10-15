@@ -39,16 +39,5 @@ let countDown = new Date('Dec 14, 2019 11:00:00').getTime(),
     }, second)
 
 
-//Adding animations to initial and header using animate.css
-    const initial =  document.getElementById('initial');
-    const header =  document.getElementById('header');
-    initial.classList.add('animated', 'bounceOutLeft');
-    header.classList.add('animated', 'bounceInRight');
-    
-    initial.addEventListener('animationend', function() { 
-      initial.classList.add("hidden");
-      initial.classList.remove("block");
-      header.classList.add("block");
-      header.classList.remove("hidden");
-     })
+
 
