@@ -1,4 +1,3 @@
-
 //Adding countdown timer to header
 const second = 1000,
       minute = second * 60,
@@ -18,22 +17,22 @@ let countDown = new Date('Dec 14, 2019 11:00:00').getTime(),
         document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
         if (Math.floor((distance % (minute)) / second) < 2){
           document.getElementById('secs').innerText = "second"
-        } else {
+        }else {
           document.getElementById('secs').innerText = "seconds"
         }
         if (Math.floor((distance % (hour)) / (minute)) < 2){
           document.getElementById('mins').innerText = "minute"
-        } else {
+        }else {
           document.getElementById('mins').innerText = "minutes"
         }
         if (Math.floor((distance % (day)) / (hour)) < 2){
           document.getElementById('hrs').innerText = "hour"
-        } else {
+        }else {
           document.getElementById('hrs').innerText = "hours"
         }
         if (Math.floor(distance / (day)) < 2){
           document.getElementById('day').innerText = "day"
-        } else {
+        }else {
           document.getElementById('day').innerText = "days"
         }
     }, second)
@@ -51,14 +50,9 @@ button[0].addEventListener("click", function () {
 //Hiding first section and displaying second section
 const initial =  document.getElementById('initial');
 const landing =  document.getElementById('landing');
-const body =  document.getElementsByTagName('body');
-body[0].classList.add('animated');
 initial.classList.add('animated', 'zoomOut');
 
-
-
-
-body[0].addEventListener('animationend', setTimeout(function() { 
+initial.addEventListener('animationend', setTimeout(function() { 
   landing.classList.remove('hidden');
   landing.classList.add('animated', 'zoomIn');
   initial.classList.add('hidden');
