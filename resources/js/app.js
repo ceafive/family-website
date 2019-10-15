@@ -39,8 +39,6 @@ let countDown = new Date('Dec 14, 2019 11:00:00').getTime(),
     }, second)
 
 // Background audio script
-
-
 var media = document.getElementById("player");
 document.addEventListener("click", function () {
   media.play();

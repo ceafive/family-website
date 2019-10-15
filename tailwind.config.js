@@ -37,9 +37,6 @@ module.exports = {
             'xl2': '1630px'
     }
   },
-  variants: {
-        borderRadius: ['responsive', 'hover', 'focus'],
-        padding: ['responsive', 'hover', 'focus'],
-  },
+  variants: {},
   plugins: []
 }
