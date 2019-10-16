@@ -4,6 +4,7 @@ module.exports = {
             'display': ['Playfair Display'],
             'body': ['Poiret One'],
             'landing': ['Sorts Mill Goudy'],
+            'scrolling': ['Arima Madurai'],
     },
     extend: {
         colors: {
