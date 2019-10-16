@@ -1,4 +1,4 @@
-//Adding countdown timer to header
+//Adding countdown timer to Section landing
 const second = 1000,
       minute = second * 60,
       hour = minute * 60,
@@ -12,12 +12,14 @@ let countDown = new Date('Dec 14, 2019 01:00:00').getTime(),
 
 //Logic for running a function when the clock runs down to one month left
       if (Math.floor(distance / (day)) <= 29){
-      document.getElementsByClassName('clock')[0].classList.add('hidden');
-      document.getElementsByTagName("button")[0].classList.add('cursor-pointer');
-      document.getElementsByTagName("button")[0].classList.remove('cursor-not-allowed');
-      clearInterval(x);
+        document.getElementsByClassName('clock')[0].classList.add('hidden');
+        button[0].classList.add('cursor-pointer');
+        button[0].classList.remove('cursor-not-allowed');
+        button[0].removeEventListener("click", buttonLogic);
+          clearInterval(x);
       }
-      console.log(Math.floor(distance / (day)));
+          console.log(Math.floor(distance / (day)));
+//
           
           
 
@@ -46,28 +48,34 @@ let countDown = new Date('Dec 14, 2019 01:00:00').getTime(),
           document.getElementById('day').innerText = "days"
         }
     }, second)
+//
 
 
-// Background audio script
+//  Background audio script
 var media = document.getElementById("player");
 var button = document.getElementsByTagName("button");
-button[0].addEventListener("click", function () {
+
+//Logic for playing audio when Button is clicked //
+function buttonLogic() {
   media.play();
   media.muted = false;
   console.log("audio playing")
   alert("Not yet active, check back again soon!")
-})
+}
+button[0].addEventListener("click", buttonLogic);
+//
 
 //Hiding first section and displaying second section after animation
 const initial =  document.getElementById('initial');
 const landing =  document.getElementById('landing');
 initial.classList.add('animated', 'zoomOut');
 
-//Adding 4.6secs timeout before applying hidden and block classes to sections
+//Adding 4.6secs timeout before applying hidden and block classes to sections//
 setTimeout(function() { 
   landing.classList.remove('hidden');
   landing.classList.add('animated', 'zoomIn');
   initial.classList.add('hidden');
  }, 4600);
+ //
 
    

@@ -20,7 +20,7 @@
 #initial h1 {
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid #d7b740;
+  border-right: .1em solid #a48623;
   /* The typwriter cursor */
   white-space: nowrap;
   /* Keeps the content on a single line */
