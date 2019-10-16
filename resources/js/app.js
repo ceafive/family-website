@@ -68,14 +68,14 @@ button[0].addEventListener("click", buttonLogic);
 //Hiding first section and displaying second section after animation
 const initial =  document.getElementById('initial');
 const landing =  document.getElementById('landing');
-initial.classList.add('animated', 'zoomOut');
+// initial.classList.add('animated', 'zoomOut');
 
 //Adding 4.6secs timeout before applying hidden and block classes to sections//
-setTimeout(function() { 
-  landing.classList.remove('hidden');
-  landing.classList.add('animated', 'zoomIn');
-  initial.classList.add('hidden');
- }, 4600);
+// setTimeout(function() { 
+//   landing.classList.remove('hidden');
+//   landing.classList.add('animated', 'zoomIn');
+//   initial.classList.add('hidden');
+//  }, 4600);
  //
 
    

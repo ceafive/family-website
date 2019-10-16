@@ -3,8 +3,7 @@ module.exports = {
     fontFamily: {
             'display': ['Playfair Display'],
             'body': ['Poiret One'],
-            'landing': ['Sorts Mill Goudy'],
-            'scrolling': ['Arima Madurai'],
+            'landing': ['Sorts Mill Goudy']
     },
     extend: {
         colors: {
