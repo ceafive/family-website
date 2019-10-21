@@ -17,7 +17,7 @@
           animation-delay: 0.1s;
 }
 
-#initial h1 {
+#initial p {
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
   border-right: .1em solid #a48623;
@@ -301,5 +301,10 @@
     -webkit-transform: translateY(0vh) translateX(110vw) scale(0.45);
             transform: translateY(0vh) translateX(110vw) scale(0.45);
   }
+}
+
+#bg_text h1 {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 /*# sourceMappingURL=main.css.map */

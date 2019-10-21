@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900|Poiret+One|Sorts+Mill+Goudy:400i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="resources/css/app.css" rel="stylesheet">
+   <title>Eyram &amp; Esi || RSVP</title>
+</head>
+
+<body id="rsvp" class="font-body">
+  
+    <div class="flex flex-wrap xxs:text-xl lg:text-3xl h-screen">
+        <div class="xxs:w-full lg:w-1/2 text-white bg-appteal xxs:px-10 xxs:pt-32 lg:px-20 lg:pt-48">
+          <h1 class="text-center text-5xl tracking-loose antialiased pb-10" >RSVP</h1>
+          <form class="w-full" name="rsvp" method="POST" data-netlify="true">
+              <div class="flex flex-wrap">
+                  <div class="w-full xxs:pr-4 pb-4">
+                      <label class="tracking-wide mb-2" for="grid-name">Your Full Name</label>
+                      <input class="appearance-none bg-transparent border-b border-b-2 border-main_green w-full py-1 leading-tight focus:outline-none" id="grid-first-name" name="name" type="text" placeholder="" aria-label="your name" required>
+                  </div>
+                  <div class="w-full xxs:pr-4 pb-4">
+                      <label class="tracking-wide mb-2" for="grid-number">Number of people attending</label>
+                      <input class="appearance-none bg-transparent border-b border-b-2 border-main_green w-full mr-3 py-1 leading-tight focus:outline-none" id="grid-number" name="number" type="number" placeholder="" aria-label="number attending" required>
+                  </div>
+                  <div class="w-full lg:w-1/2 xxs:pr-4 pb-4">
+                    <label class="tracking-wide mb-2" for="grid-yes-no">Will You Be Attending?</label>
+                    <div class="relative">
+                      <select class="appearance-none bg-transparent border-b border-b-2 border-main_green w-full leading-tight focus:outline-none" id="grid-yes-no" name="response">
+                        <option>Yes</option>
+                        <option>No</option>
+                      </select>
+                      <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+                      </div>
+                    </div>
+                  </div>
+                
+                  <div class="w-full xxs:pr-4" data-netlify-recaptcha="true">
+
+                  </div>
+                  <button class="border border-appgold focus:outline-none shadow-xl py-2 px-4" type="submit">
+                  send
+                  </button>
+              </div>
+            </form>  
+        </div>
+        <div id="map" class="xxs:w-full lg:w-1/2 font-black text-black text-center bg-white xxs:px-10 xxs:pt-32 lg:px-20 lg:pt-40">
+            <img class="shadow-xl" src="/resources/img/location.png" alt="directions">
+            <a href="https://www.google.com/maps/place/5%C2%B032'59.0%22N+0%C2%B014'02.0%22W/@5.549712,-0.2344212,19z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d5.5497123!4d-0.2338741"><span>Click Here for Directions</span></a>
+        </div>
+    </div>
+</body>
+</html>

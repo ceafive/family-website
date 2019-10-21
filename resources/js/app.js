@@ -4,7 +4,7 @@ const second = 1000,
       hour = minute * 60,
       day = hour * 24;
 
-let countDown = new Date('Dec 14, 2019 01:00:00').getTime(),
+let countDown = new Date('Nov 14, 2019 01:00:00').getTime(),
     x = setInterval(function() {
 
       let deadline = new Date().getTime(),
@@ -12,13 +12,15 @@ let countDown = new Date('Dec 14, 2019 01:00:00').getTime(),
 
 //Logic for running a function when the clock runs down to one month left
       if (Math.floor(distance / (day)) <= 29){
-        document.getElementsByClassName('clock')[0].classList.add('hidden');
+        document.getElementById('clock').classList.add('hidden');
         button[0].classList.add('cursor-pointer');
         button[0].classList.remove('cursor-not-allowed');
         button[0].removeEventListener("click", buttonLogic);
+        // Logic to make RSVP button active 29 days before
+        document.getElementById("rsvp").href = "/rsvp.html"
           clearInterval(x);
       }
-          console.log(Math.floor(distance / (day)));
+          // console.log(Math.floor(distance / (day)));
 //
           
           
@@ -78,4 +80,74 @@ setTimeout(function() {
  }, 4600);
  //
 
-   
+
+ //Logic for sending whatsapp messages when web.whatsapp.com is open
+ /* 
+ function simulateMouseEvents(element, eventName) 
+{ 
+    var mouseEvent = document.createEvent('MouseEvents'); 
+    mouseEvent.initEvent(eventName, true, true); 
+    element.dispatchEvent(mouseEvent); 
+} 
+  
+
+var now = new Date(); 
+  
+// Replace Hours, Mins and secs with your
+// desired time in 24 hour time format e.g.
+// var rt = new Date(now.getFullYear(), now.getMonth(),
+// now.getDate(), Hours, Minutes, Sec, 0) - now;
+// to send message at 2.30PM
+var rt = new Date(now.getFullYear(), now.getMonth(), 
+                now.getDate(), 23, 06, 00, 0) - now;  
+  
+  
+  
+if (rt < 0) { 
+    rt += 86400000;  
+} 
+  
+setTimeout(startTimer, rt); 
+  
+  
+// Replace My Contact Name with the name
+// of your WhatsApp contact or group e.g. title="Peter Parker"
+name = "Jason Ami" 
+  
+    simulateMouseEvents(document.querySelector('[title="' + name + '"]'), 'mousedown'); 
+  
+function startTimer() 
+{ 
+    setTimeout(myFunc, 3000); 
+} 
+  
+startTimer(); 
+  
+var eventFire = (MyElement, ElementType) => { 
+    var MyEvent = document.createEvent("MouseEvents"); 
+    MyEvent.initMouseEvent 
+     (ElementType, true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null); 
+    MyElement.dispatchEvent(MyEvent); 
+}; 
+  
+function myFunc() 
+{ 
+  
+    messageBox = document.querySelectorAll("[contenteditable='true']")[0]; 
+  
+    message = "Hey Jelly"; // Replace My Message with your message
+  
+    counter = 5; // Replace 5 with the number of times you want to send your message
+  
+    for (i = 0; i < counter; i++) { 
+        event = document.createEvent("UIEvents"); 
+        messageBox.innerHTML = message // test it
+        event.initUIEvent("input", true, true, window, 1); 
+        messageBox.dispatchEvent(event); 
+  
+        eventFire(document.querySelector('span[data-icon="send"]'), 'click'); 
+    } 
+} 
+ */
+
+// 1573693200000

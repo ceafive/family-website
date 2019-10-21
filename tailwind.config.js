@@ -13,7 +13,7 @@ module.exports = {
         },
         fontSize: {
             '8xl': '5rem',
-            '10xl': '10rem'
+            '10xl': '7rem'
         },
         spacing: {
             '28': '7.5rem',
@@ -22,7 +22,10 @@ module.exports = {
             '80': '24rem',
             '96': '28rem',
             '128': '32rem',
-        }
+        },
+        letterSpacing: {
+            loose: '0.8em',
+    }
     },
     screens: {
             'xxs': '320px',
