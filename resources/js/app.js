@@ -1,16 +1,47 @@
+// Declare variables
+const initial =  document.getElementById('initial'),
+      landing =  document.getElementById('landing'),
+      clock = document.getElementById("clock"),
+      main = document.getElementById("main"),
+      last = document.getElementById("last"),
+      link = last.children[0],
+      button = last.children[0].children[0],
+      media = last.children[1]
+
+//Logic for playing audio when Button is clicked //
+function buttonLogic() {
+  media.play();
+  media.muted = false;
+  console.log("audio playing")
+  alert("Not yet active, check back again soon!")
+}
+button.addEventListener("click", buttonLogic);
+//
+
+//Hiding first section and displaying second section after animation
+  initial.classList.add('animated', 'zoomOut');
+  //Adding 4.6secs timeout before applying hidden and block classes to sections
+  setTimeout(function() { 
+  landing.classList.remove('hidden');
+  landing.classList.add('animated', 'zoomIn');
+  initial.classList.add('hidden');
+  }, 4600);
+//
+
+
 //Adding countdown timer to Section landing
 const second = 1000,
       minute = second * 60,
       hour = minute * 60,
       day = hour * 24;
 
-let countDown = new Date('Dec 14, 2019 11:00:00').getTime(),
+let countDown = new Date('Oct 14, 2019 11:00:00').getTime(),
     x = setInterval(function() {
 
       let now = new Date().getTime(),
           distance = countDown - now;
 
-//Logic for running a function when the clock runs down to one month left
+      //Logic for running a function when the clock runs down to one month left
       if (Math.floor(distance / (day)) <= 29){
         button.removeEventListener("click", buttonLogic);
         // Logic to make RSVP button active 29 days before
@@ -19,16 +50,13 @@ let countDown = new Date('Dec 14, 2019 11:00:00').getTime(),
       if (Math.floor(distance / (day)) <= 0){
         clock.classList.add('hidden');
         last.classList.add('hidden');
-        main.classList.add('xxs:pt-24', 'md:pt-32', 'xl:pt-40');
-        main.classList.remove('xxs:pt-12', 'md:pt-28', 'xl:pt-32');
+        main.classList.add('xxs:pt-32', 'xl:pt-40');
+        main.classList.remove('xxs:pt-2', 'md:pt-10', 'xl:pt-12');
         //Function to stop countdown
         clearInterval(x);
       }
-          // console.log(Math.floor(distance / (day)));
+    //  console.log(Math.floor(distance / (day)));
 //
-          
-          
-
         document.getElementById('days').innerText = Math.floor(distance / (day));
         document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour));
         document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute));
@@ -55,40 +83,6 @@ let countDown = new Date('Dec 14, 2019 11:00:00').getTime(),
         }
     }, second)
 //
-
-
-// Declare variables audio script
-const clock = document.getElementById("clock"),
-      main = document.getElementById("main"),
-      last = document.getElementById("last"),
-      link = last.children[0],
-      button = last.children[0].children[0],
-      media = last.children[1]
-
-
-//Logic for playing audio when Button is clicked //
-function buttonLogic() {
-  media.play();
-  media.muted = false;
-  console.log("audio playing")
-  alert("Not yet active, check back again soon!")
-}
-button.addEventListener("click", buttonLogic);
-//
-
-//Hiding first section and displaying second section after animation
-const initial =  document.getElementById('initial');
-const landing =  document.getElementById('landing');
-initial.classList.add('animated', 'zoomOut');
-
-//Adding 4.6secs timeout before applying hidden and block classes to sections//
-setTimeout(function() { 
-  landing.classList.remove('hidden');
-  landing.classList.add('animated', 'zoomIn');
-  initial.classList.add('hidden');
- }, 4600);
- //
-
 
  //Logic for sending whatsapp messages when web.whatsapp.com is open
  /* 
