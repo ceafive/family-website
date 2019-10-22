@@ -12,15 +12,15 @@ let countDown = new Date('Dec 14, 2019 11:00:00').getTime(),
 
 //Logic for running a function when the clock runs down to one month left
       if (Math.floor(distance / (day)) <= 29){
-        button[0].removeEventListener("click", buttonLogic);
+        button.removeEventListener("click", buttonLogic);
         // Logic to make RSVP button active 29 days before
-        document.getElementById('rsvp').href = "/rsvp.html"
-          
+        link.href = "/rsvp.html"
       }
       if (Math.floor(distance / (day)) <= 0){
-        document.getElementById('clock').classList.add('opacity-0');
-        document.getElementById('last').classList.add('hidden');
-        document.getElementById('main').classList.add('xxs:pt-56', 'xl:pt-32');
+        clock.classList.add('hidden');
+        last.classList.add('hidden');
+        main.classList.add('xxs:pt-24', 'md:pt-32', 'xl:pt-40');
+        main.classList.remove('xxs:pt-12', 'md:pt-28', 'xl:pt-32');
         //Function to stop countdown
         clearInterval(x);
       }
@@ -57,9 +57,13 @@ let countDown = new Date('Dec 14, 2019 11:00:00').getTime(),
 //
 
 
-// Background audio script
-var media = document.getElementById("player");
-var button = document.getElementsByTagName("button");
+// Declare variables audio script
+const clock = document.getElementById("clock"),
+      main = document.getElementById("main"),
+      last = document.getElementById("last"),
+      link = last.children[0],
+      button = last.children[0].children[0],
+      media = last.children[1]
 
 
 //Logic for playing audio when Button is clicked //
@@ -69,7 +73,7 @@ function buttonLogic() {
   console.log("audio playing")
   alert("Not yet active, check back again soon!")
 }
-button[0].addEventListener("click", buttonLogic);
+button.addEventListener("click", buttonLogic);
 //
 
 //Hiding first section and displaying second section after animation
@@ -155,4 +159,29 @@ function myFunc()
 } 
  */
 
-// 1573693200000
+ //Logic for toggling the menu items from display to hidden
+ $(document).ready(function () {  
+  $('.toggle').click(function() {
+    $('.nav').slideToggle(200);  
+    });
+  });
+    
+   //Logic for changing navigation icon when on mobile view (choosing with svg to display)
+  const icon = document.getElementsByClassName("icon");
+  const nav = document.getElementsByClassName("nav");
+  const toggle = document.getElementsByClassName("toggle");
+  
+  
+  toggle[0].addEventListener("click", function(){ 
+      if(nav[0].style.display == "none" || nav[0].style.display == ""){
+          icon[0].classList.add("hidden");
+          icon[0].classList.remove("block");
+          icon[1].classList.add("block");
+          icon[1].classList.remove("hidden");
+      } else {
+          icon[0].classList.add("block");
+          icon[0].classList.remove("hidden");
+          icon[1].classList.add("hidden");
+          icon[1].classList.remove("block");
+      }
+  });
