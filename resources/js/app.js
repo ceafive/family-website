@@ -4,21 +4,25 @@ const second = 1000,
       hour = minute * 60,
       day = hour * 24;
 
-let countDown = new Date('Dec 14, 2019 01:00:00').getTime(),
+let countDown = new Date('Dec 14, 2019 11:00:00').getTime(),
     x = setInterval(function() {
 
-      let deadline = new Date().getTime(),
-          distance = countDown - deadline;
+      let now = new Date().getTime(),
+          distance = countDown - now;
 
 //Logic for running a function when the clock runs down to one month left
       if (Math.floor(distance / (day)) <= 29){
-        document.getElementById('clock').classList.add('hidden');
-        button[0].classList.add('cursor-pointer');
-        button[0].classList.remove('cursor-not-allowed');
         button[0].removeEventListener("click", buttonLogic);
         // Logic to make RSVP button active 29 days before
-        document.getElementById("rsvp").href = "/rsvp.html"
-          clearInterval(x);
+        document.getElementById('rsvp').href = "/rsvp.html"
+          
+      }
+      if (Math.floor(distance / (day)) <= 0){
+        document.getElementById('clock').classList.add('opacity-0');
+        document.getElementById('last').classList.add('hidden');
+        document.getElementById('main').classList.add('xxs:pt-56', 'xl:pt-32');
+        //Function to stop countdown
+        clearInterval(x);
       }
           // console.log(Math.floor(distance / (day)));
 //
@@ -53,9 +57,10 @@ let countDown = new Date('Dec 14, 2019 01:00:00').getTime(),
 //
 
 
-//  Background audio script
+// Background audio script
 var media = document.getElementById("player");
 var button = document.getElementsByTagName("button");
+
 
 //Logic for playing audio when Button is clicked //
 function buttonLogic() {
