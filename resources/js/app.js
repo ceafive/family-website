@@ -13,13 +13,13 @@ const initial =  document.getElementById('initial'),
       seconds = document.getElementById('seconds');
 
 //Logic for playing audio when Button is clicked //
-function buttonLogic() {
+function audioLogic() {
   media.play();
   media.muted = false;
   console.log("audio playing")
   alert("Not yet active, check back again soon!")
 }
-button.addEventListener("click", buttonLogic);
+button.addEventListener("click", audioLogic);
 //
 
 //Hiding first section and displaying second section after animation
@@ -32,14 +32,13 @@ button.addEventListener("click", buttonLogic);
   }, 4600);
 //
 
-
 //Adding countdown timer to Section landing
 const second = 1000,
       minute = second * 60,
       hour = minute * 60,
       day = hour * 24;
 
-let countDown = new Date('Dec 14, 2019 11:00:00').getTime(),
+let countDown = new Date('Oct 14, 2019 11:00:00').getTime(),
     x = setInterval(function() {
 
       let now = new Date().getTime(),
@@ -47,14 +46,15 @@ let countDown = new Date('Dec 14, 2019 11:00:00').getTime(),
 
       //Logic for running a function when the clock runs down to one month left
       if (Math.floor(distance / (day)) <= 29){
-        button.removeEventListener("click", buttonLogic);
-        // Logic to make RSVP button active 29 days before
+        button.removeEventListener("click", audioLogic);
+      // Logic to make RSVP button active 29 days before
         link.href = "/rsvp.html"
       }
       if (Math.floor(distance / (day)) <= 0){
         clock.classList.add('hidden');
-        last.classList.add('hidden');
-        main.classList.add('xxs:pt-32', 'xl:pt-40');
+        button.innerText = "Directions to Venue!"
+        link.href = "https://www.google.com/maps/place/5%C2%B032'59.0%22N+0%C2%B014'02.0%22W/@5.549712,-0.2344212,19z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d5.5497123!4d-0.2338741"
+        main.classList.add('xxs:pt-32');
         main.classList.remove('xxs:pt-2', 'md:pt-10', 'xl:pt-12');
         //Function to stop countdown
         clearInterval(x);
