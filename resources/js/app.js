@@ -6,7 +6,11 @@ const initial =  document.getElementById('initial'),
       last = document.getElementById("last"),
       link = last.children[0],
       button = last.children[0].children[0],
-      media = last.children[1]
+      media = last.children[1],
+      days = document.getElementById('days'),
+      hours = document.getElementById('hours'),
+      minutes = document.getElementById('minutes'),
+      seconds = document.getElementById('seconds');
 
 //Logic for playing audio when Button is clicked //
 function buttonLogic() {
@@ -55,31 +59,31 @@ let countDown = new Date('Dec 14, 2019 11:00:00').getTime(),
         //Function to stop countdown
         clearInterval(x);
       }
-    //  console.log(Math.floor(distance / (day)));
-//
-        document.getElementById('days').innerText = Math.floor(distance / (day));
-        document.getElementById('hours').innerText = Math.floor((distance % (day)) / (hour));
-        document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute));
-        document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+      //console.log(Math.floor(distance / (day)));
+      //
+        days.children[0].innerText = Math.floor(distance / (day));
+        hours.children[0].innerText = Math.floor((distance % (day)) / (hour));
+        minutes.children[0].innerText = Math.floor((distance % (hour)) / (minute));
+        seconds.children[0].innerText = Math.floor((distance % (minute)) / second);
         if (Math.floor((distance % (minute)) / second) < 2){
-          document.getElementById('secs').innerText = "second"
+          seconds.children[1].innerText = "second"
         }else {
-          document.getElementById('secs').innerText = "seconds"
+          seconds.children[1].innerText = "seconds"
         }
         if (Math.floor((distance % (hour)) / (minute)) < 2){
-          document.getElementById('mins').innerText = "minute"
+          minutes.children[1].innerText = "minute"
         }else {
-          document.getElementById('mins').innerText = "minutes"
+          minutes.children[1].innerText = "minutes"
         }
         if (Math.floor((distance % (day)) / (hour)) < 2){
-          document.getElementById('hrs').innerText = "hour"
+          hours.children[1].innerText = "hour"
         }else {
-          document.getElementById('hrs').innerText = "hours"
+          hours.children[1].innerText = "hours"
         }
         if (Math.floor(distance / (day)) < 2){
-          document.getElementById('day').innerText = "day"
+          days.children[1].innerText = "day"
         }else {
-          document.getElementById('day').innerText = "days"
+          days.children[1].innerText = "days"
         }
     }, second)
 //
