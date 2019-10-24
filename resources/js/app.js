@@ -1,18 +1,11 @@
 // Declare variables
 const initial =  document.getElementById('initial'),
       landing =  document.getElementById('landing'),
-      clock = document.getElementById("clock"),
-      main = document.getElementById("main"),
-      last = document.getElementById("last"),
-      link = last.children[0],
       button = last.children[0].children[0],
-      media = last.children[1],
-      days = document.getElementById('days'),
-      hours = document.getElementById('hours'),
-      minutes = document.getElementById('minutes'),
-      seconds = document.getElementById('seconds');
-
-//Logic for playing audio when Button is clicked //
+      media = last.children[1];
+//
+     
+//Logic for playing audio when Button is clicked
 function audioLogic() {
   media.play();
   media.muted = false;
@@ -22,9 +15,11 @@ function audioLogic() {
 button.addEventListener("click", audioLogic);
 //
 
-//Hiding first section and displaying second section after animation
+//Adding animation to first section after 4secs
   initial.classList.add('animated', 'zoomOut');
-  //Adding 4.6secs timeout before applying hidden and block classes to sections
+//
+
+//Adding 4.6secs timeout before applying hidden and block classes to sections
   setTimeout(function() { 
   landing.classList.remove('hidden');
   landing.classList.add('animated', 'zoomIn');
@@ -36,57 +31,105 @@ button.addEventListener("click", audioLogic);
 const second = 1000,
       minute = second * 60,
       hour = minute * 60,
-      day = hour * 24;
+      day = hour * 24,
+      countDown = new Date('Dec 14, 2019 11:00:00').getTime(),
 
-let countDown = new Date('Oct 14, 2019 11:00:00').getTime(),
     x = setInterval(function() {
+    const now = new Date().getTime(),
+          distance = countDown - now,
 
-      let now = new Date().getTime(),
-          distance = countDown - now;
+          clock = document.getElementById("clock"),
+          main = document.getElementById("main"),
+          last = document.getElementById("last"),
+          link = last.children[0],
+          
+          daysDisplay = Math.floor(distance / (day)),
+          hoursDisplay = Math.floor((distance % (day)) / (hour)),
+          minutesDisplay = Math.floor((distance % (hour)) / (minute)),
+          secondsDisplay = Math.floor((distance % (minute)) / second),
+          days = document.getElementById('days'),
+          hours = document.getElementById('hours'),
+          minutes = document.getElementById('minutes'),
+          seconds = document.getElementById('seconds');
 
-      //Logic for running a function when the clock runs down to one month left
-      if (Math.floor(distance / (day)) <= 29){
-        button.removeEventListener("click", audioLogic);
-      // Logic to make RSVP button active 29 days before
-        link.href = "/rsvp.html"
-      }
-      if (Math.floor(distance / (day)) <= 0){
-        clock.classList.add('hidden');
-        button.innerText = "Directions to Venue!"
-        link.href = "https://www.google.com/maps/place/5%C2%B032'59.0%22N+0%C2%B014'02.0%22W/@5.549712,-0.2344212,19z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d5.5497123!4d-0.2338741"
-        main.classList.add('xxs:pt-32');
-        main.classList.remove('xxs:pt-2', 'md:pt-10', 'xl:pt-12');
-        //Function to stop countdown
-        clearInterval(x);
-      }
-      //console.log(Math.floor(distance / (day)));
-      //
-        days.children[0].innerText = Math.floor(distance / (day));
-        hours.children[0].innerText = Math.floor((distance % (day)) / (hour));
-        minutes.children[0].innerText = Math.floor((distance % (hour)) / (minute));
-        seconds.children[0].innerText = Math.floor((distance % (minute)) / second);
-        if (Math.floor((distance % (minute)) / second) < 2){
-          seconds.children[1].innerText = "second"
-        }else {
-          seconds.children[1].innerText = "seconds"
-        }
-        if (Math.floor((distance % (hour)) / (minute)) < 2){
-          minutes.children[1].innerText = "minute"
-        }else {
-          minutes.children[1].innerText = "minutes"
-        }
-        if (Math.floor((distance % (day)) / (hour)) < 2){
-          hours.children[1].innerText = "hour"
-        }else {
-          hours.children[1].innerText = "hours"
-        }
-        if (Math.floor(distance / (day)) < 2){
-          days.children[1].innerText = "day"
-        }else {
-          days.children[1].innerText = "days"
-        }
+//Inputting countdown into div with ID clock //
+          days.children[0].innerText = daysDisplay;
+          hours.children[0].innerText = hoursDisplay;
+          minutes.children[0].innerText = minutesDisplay;
+          seconds.children[0].innerText = secondsDisplay;
+          if (daysDisplay < 2){
+            days.children[1].innerText = "day"
+          }else {
+            days.children[1].innerText = "days"
+          }
+          if (hoursDisplay < 2){
+            hours.children[1].innerText = "hour"
+          }else {
+            hours.children[1].innerText = "hours"
+          }
+          if (minutesDisplay < 2){
+            minutes.children[1].innerText = "minute"
+          }else {
+            minutes.children[1].innerText = "minutes"
+          }
+          if (secondsDisplay < 2){
+            seconds.children[1].innerText = "second"
+          }else {
+            seconds.children[1].innerText = "seconds"
+          }
+         
+
+    //Logic for running a function when the clock runs down to one month left
+          if (daysDisplay <= 29){
+            button.removeEventListener("click", audioLogic);
+    // Logic to make RSVP button active 29 days before
+            link.href = "/rsvp.html"
+          }
+    //
+
+    //Logic for running a function when zero days left
+          if (daysDisplay <= 0){
+            clock.classList.add('hidden');
+            button.innerText = "Directions to Venue!"
+            link.href = "https://www.google.com/maps/place/5%C2%B032'59.0%22N+0%C2%B014'02.0%22W/@5.549712,-0.2344212,19z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d5.5497123!4d-0.2338741"
+            main.classList.add('xxs:pt-32');
+            main.classList.remove('xxs:pt-2', 'md:pt-10', 'xl:pt-12');
+    //Function to stop countdown
+            clearInterval(x);
+    }
+    //
+
+    //console.log(Math.floor(distance / (day)));  
+
     }, second)
 //
+
+//Logic for toggling the menu items from display to hidden
+  $(document).ready(function () {  
+    $('.toggle').click(function() {
+      $('.nav').slideToggle(200);  
+    });
+  });
+    
+//Logic for changing navigation icon when on mobile view (choosing which svg to display)
+  const icon = document.getElementsByClassName("icon");
+  const nav = document.getElementsByClassName("nav");
+  const toggle = document.getElementsByClassName("toggle");
+  
+  
+  toggle[0].addEventListener("click", function(){ 
+      if(nav[0].style.display == "none" || nav[0].style.display == ""){
+          icon[0].classList.add("hidden");
+          icon[0].classList.remove("block");
+          icon[1].classList.add("block");
+          icon[1].classList.remove("hidden");
+      } else {
+          icon[0].classList.add("block");
+          icon[0].classList.remove("hidden");
+          icon[1].classList.add("hidden");
+          icon[1].classList.remove("block");
+      }
+  });
 
  //Logic for sending whatsapp messages when web.whatsapp.com is open
  /* 
@@ -157,29 +200,3 @@ function myFunc()
 } 
  */
 
- //Logic for toggling the menu items from display to hidden
- $(document).ready(function () {  
-  $('.toggle').click(function() {
-    $('.nav').slideToggle(200);  
-    });
-  });
-    
-   //Logic for changing navigation icon when on mobile view (choosing with svg to display)
-  const icon = document.getElementsByClassName("icon");
-  const nav = document.getElementsByClassName("nav");
-  const toggle = document.getElementsByClassName("toggle");
-  
-  
-  toggle[0].addEventListener("click", function(){ 
-      if(nav[0].style.display == "none" || nav[0].style.display == ""){
-          icon[0].classList.add("hidden");
-          icon[0].classList.remove("block");
-          icon[1].classList.add("block");
-          icon[1].classList.remove("hidden");
-      } else {
-          icon[0].classList.add("block");
-          icon[0].classList.remove("hidden");
-          icon[1].classList.add("hidden");
-          icon[1].classList.remove("block");
-      }
-  });
