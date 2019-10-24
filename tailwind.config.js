@@ -10,6 +10,7 @@ module.exports = {
             appteal: '#0a1c1c',
             appgold: '#a48623',    
             appgreen: '#4C9D77',    
+            white: '#E8E9ED',    
         },
         fontSize: {
             '8xl': '5rem',
