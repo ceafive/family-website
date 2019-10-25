@@ -26,7 +26,10 @@ module.exports = {
         },
         letterSpacing: {
             loose: '0.8em',
-    }
+        },
+        boxShadow: {
+            "3xl": '10px 10px 103px 58px rgba(10,28,28,1)'
+        }
     },
     screens: {
             'xxs': '320px',
