@@ -1,6 +1,10 @@
-// Declare variables
+// Declaring variables
 const initial =  document.getElementById('initial'),
       landing =  document.getElementById('landing'),
+      main = landing.children[1],
+      clock = landing.children[2],
+      last = landing.children[3],
+      link = last.children[0],
       button = last.children[0].children[0],
       media = last.children[1];
 //
@@ -37,11 +41,6 @@ const second = 1000,
     x = setInterval(function() {
     const now = new Date().getTime(),
           distance = countDown - now,
-
-          clock = document.getElementById("clock"),
-          main = document.getElementById("main"),
-          last = document.getElementById("last"),
-          link = last.children[0],
           
           daysDisplay = Math.floor(distance / (day)),
           hoursDisplay = Math.floor((distance % (day)) / (hour)),

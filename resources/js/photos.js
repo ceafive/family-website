@@ -25,6 +25,8 @@ toggle[0].addEventListener("click", function(){
     }
 });
  
+
+
  //Initialize animate on scroll
 AOS.init();
  
