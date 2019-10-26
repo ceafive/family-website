@@ -47,7 +47,7 @@ AOS.init();
     let content = "";
     output.forEach(photo => {
       content += 
-      `<div class="flex justify-center xxs:w-1/2 lg:w-1/4 xxs:px-3 lg:px-0 mb-4 z-10" data-aos="fade-up" data-aos-duration="1000">
+      `<div class="flex justify-center xxs:w-1/2 lg:w-1/4 xxs:px-3 mb-4 z-10" data-aos="fade-up" data-aos-duration="1000">
       <img class="myImg w-full lg:max-w-xs cursor-pointer hover:opacity-75" src=${photo.strDrinkThumb} alt="image_${photo.idDrink}">
     </div>`
     });

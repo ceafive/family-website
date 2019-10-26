@@ -324,7 +324,7 @@
 /* The Close Button */
 .close {
   top: 15px;
-  right: 25px;
+  right: 10px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
