@@ -304,7 +304,28 @@
 }
 
 #bg_text h1 {
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.myImg {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* The Modal (background) */
+.modal {
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+/* The Close Button */
+.close {
+  top: 15px;
+  right: 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 /*# sourceMappingURL=main.css.map */

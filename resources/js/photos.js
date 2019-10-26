@@ -33,31 +33,57 @@ AOS.init();
  //Fetching and displaying photos on Photos page
  function fetchPhotos(){
   const output = [];
- fetch('https://jsonplaceholder.typicode.com/photos')
+//  fetch('https://jsonplaceholder.typicode.com/photos')
+ fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a')
   .then(response => response.json())
   .then(json => {
-    json.forEach(data => {
+    json.drinks.forEach(data => {
       if (output.length < 20) {
         output.push(data);
       }
     })
-    console.log(output);
+    // console.log(output);
+
     let content = "";
     output.forEach(photo => {
-      content += `
-      <div class="flex justify-center w-1/2 mb-4 z-40" data-aos="fade-up" data-aos-duration="1000">
-        <img src=${photo.url} alt=${photo.id}>
-      </div>
-      `
+      content += 
+      `<div class="flex justify-center xxs:w-1/2 lg:w-1/4 xxs:px-3 lg:px-0 mb-4 z-10" data-aos="fade-up" data-aos-duration="1000">
+      <img class="myImg w-full lg:max-w-xs cursor-pointer hover:opacity-75" src=${photo.strDrinkThumb} alt="image_${photo.idDrink}">
+    </div>`
     });
     document.getElementById("photos").innerHTML = content;
+
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal 
+    var modalImg = document.getElementById("img01");
+    var img = document.getElementsByClassName("myImg");
+    // console.log(img);
+   
+    var i;
+    for (i = 0; i < img.length; i++) {
+      img[i].onclick = function(){
+        modal.classList.add("block");
+        modal.classList.remove("hidden");
+        modalImg.src = this.src;
+      }
+    }
+   
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.classList.add("hidden");
+      modal.classList.remove("block");
+    }
   })
   .catch((err) => 
     console.log(err));
   }
 
-// fetchPhotos();
-
+fetchPhotos();
 
 
 

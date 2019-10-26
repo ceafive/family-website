@@ -26,9 +26,6 @@ module.exports = {
         },
         letterSpacing: {
             loose: '0.8em',
-        },
-        boxShadow: {
-            "3xl": '10px 10px 103px 58px rgba(10,28,28,1)'
         }
     },
     screens: {
@@ -41,6 +38,8 @@ module.exports = {
             'xl2': '1630px'
     }
   },
-  variants: {},
+  variants: {
+    cursor: ['responsive', 'hover', 'focus'],
+  },
   plugins: []
 }
