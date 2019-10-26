@@ -38,7 +38,7 @@ AOS.init();
   .then(response => response.json())
   .then(json => {
     json.drinks.forEach(data => {
-      if (output.length < 20) {
+      if (output.length < 100) {
         output.push(data);
       }
     })
@@ -48,8 +48,8 @@ AOS.init();
     output.forEach(photo => {
       content += 
       `<div class="flex justify-center xxs:w-1/2 lg:w-1/4 xxs:px-3 mb-4 z-10" data-aos="fade-up" data-aos-duration="1000">
-      <img class="myImg w-full lg:max-w-xs cursor-pointer hover:opacity-75" src=${photo.strDrinkThumb} alt="image_${photo.idDrink}">
-    </div>`
+        <img class="myImg w-full lg:max-w-xs cursor-pointer hover:opacity-75" src=${photo.strDrinkThumb} alt="image_${photo.idDrink}">
+      </div>`
     });
     document.getElementById("photos").innerHTML = content;
 

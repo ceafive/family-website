@@ -10,7 +10,10 @@ module.exports = {
             appteal: '#0a1c1c',
             appgold: '#a48623',    
             appgreen: '#4C9D77',    
-            white: '#E8E9ED',    
+            white: '#E8E9ED',
+            black: {
+              lighter: "rgba(0,0,0,0.9)"
+            }    
         },
         fontSize: {
             '8xl': '5rem',
@@ -26,6 +29,10 @@ module.exports = {
         },
         letterSpacing: {
             loose: '0.8em',
+        },
+        inset: {
+            "15": "15px",
+            "10": "10px",
         }
     },
     screens: {
