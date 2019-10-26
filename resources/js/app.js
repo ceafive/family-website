@@ -92,7 +92,7 @@ const second = 1000,
             button.innerText = "Directions to Venue!"
             link.href = "https://www.google.com/maps/place/5%C2%B032'59.0%22N+0%C2%B014'02.0%22W/@5.549712,-0.2344212,19z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d5.5497123!4d-0.2338741"
             main.classList.add('xxs:pt-32');
-            main.classList.remove('xxs:pt-2', 'md:pt-10', 'xl:pt-12');
+            main.classList.remove('xxs:pt-2', 'md:pt-10', 'lg:pt-24', 'xl:pt-12');
     //Function to stop countdown
             clearInterval(x);
     }
