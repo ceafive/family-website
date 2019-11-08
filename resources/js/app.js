@@ -36,7 +36,7 @@ const second = 1000,
       minute = second * 60,
       hour = minute * 60,
       day = hour * 24,
-      countDown = new Date('Nov 14, 2019 11:00:00').getTime(),
+      countDown = new Date('Dec 14, 2019 11:00:00').getTime(),
 
     x = setInterval(function() {
     const now = new Date().getTime(),
@@ -50,7 +50,7 @@ const second = 1000,
           hours = document.getElementById('hours'),
           minutes = document.getElementById('minutes'),
           seconds = document.getElementById('seconds');
-          console.log(daysDisplay);
+          
 //Inputting countdown into div with ID clock //
           days.children[0].innerText = daysDisplay;
           hours.children[0].innerText = hoursDisplay;
@@ -138,19 +138,16 @@ const second = 1000,
     const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?id=${CITY_ID}&units=metric&appid=${APP_ID}`);
     const data = await res.json();
     const weather = data;
-    console.log(weather);
-
-    const city =  document.getElementById('city'),
-          condition =  document.getElementById('condition'),
-          temperature =  document.getElementById('temperature');
 
   //Rendering 
+  const city =  document.getElementById('city'),
+        condition =  document.getElementById('condition'),
+        temperature =  document.getElementById('temperature');
+
   city.innerText = weather.name;
   temperature.innerText = Math.floor(weather.main.temp);
   condition.innerText = weather.weather[0].description;
   }
-  
-
   
   fetchWeather();
 
