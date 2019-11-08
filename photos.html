@@ -42,24 +42,34 @@
     </nav>
 </section>
         
-<div id="bg_text" class="py-6">
-  <h1 class="text-center tracking-loose xxs:text-3xl xs:text-4xl lg:text-10xl antialiased animated zoomIn z-0">PHOTOS</h1>
-</div>
+<!-- <button id="sign-in-or-out-button"
+        style="margin-left: 25px">Sign In/Authorize
+</button>
+<button id="revoke-access-button"
+        style="display: none; margin-left: 25px">Revoke access
+</button>
 
-<div id="photos" class="flex flex-wrap z-10">
-    <div class="flex justify-center xxs:w-1/2 lg:w-1/4 xxs:px-3 mb-4 z-10"></div>
+<div id="auth-status" style="display: inline; padding-left: 25px"></div><hr> -->
+
+<div id="photos" class="flex flex-wrap z-10 py-20">
+    <h1 id="bg_text" class="flex justify-center w-full tracking-loose xxs:text-3xl xs:text-4xl lg:text-10xl antialiased animated zoomIn py-56 z-0">PHOTOS</h1>
+    <div class="xxs:w-1/2 lg:w-1/4 xxs:px-3 mb-4 z-10"></div>
     <img class="w-full lg:max-w-xs cursor-pointer hover:opacity-75" src="" alt="">
 </div>
 
-<div id="myModal" class="modal bg-black-lighter fixed left-0 top-0 w-full h-full overflow-auto hidden xxs:pt-12 lg:pt-24 z-40">
-    <span class="close absolute text-white text-6xl font-black top-15 right-10 hover:cursor-pointer hover:text-gray-500 hover:no-underline">&times;</span>
-    <img id="img01" class="animated zoomIn block w-4/5 max-w-2xl  m-auto">
+<div id="myModal" class="bg-black-lighter fixed left-0 top-0 w-full h-full overflow-auto hidden xxs:pt-12 lg:pt-24 z-40">
+    <span id="close" class="absolute text-white text-6xl font-black top-15 right-10 hover:cursor-pointer hover:text-gray-500 hover:no-underline">&times;</span>
+    <img id="img01" class="animated zoomIn block w-4/5 max-w-2xl m-auto">
 </div>
 
 <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
+<!-- <script async defer src="https://apis.google.com/js/api.js" 
+  onload="this.onload=function(){};handleClientLoad()" 
+  onreadystatechange="if (this.readyState === 'complete') this.onload()">
+</script> -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="resources/js/photos.js"></script>
 </body>

@@ -25,65 +25,123 @@ toggle[0].addEventListener("click", function(){
     }
 });
  
-
-
- //Initialize animate on scroll
-AOS.init();
- 
  //Fetching and displaying photos on Photos page
- function fetchPhotos(){
-  const output = [];
-//  fetch('https://jsonplaceholder.typicode.com/photos')
- fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a')
-  .then(response => response.json())
-  .then(json => {
-    json.drinks.forEach(data => {
-      if (output.length < 100) {
-        output.push(data);
-      }
-    })
-    // console.log(output);
+ setTimeout(()=> {
+  async function fetchPhotos(){
+    const res = await fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic'); // || 'https://jsonplaceholder.typicode.com/photos'
+    const data = await res.json();
+    const photos = data.drinks;
 
+//Grab photos and insert them into HTML
     let content = "";
-    output.forEach(photo => {
+    for(photo of photos){
       content += 
       `<div class="flex justify-center xxs:w-1/2 lg:w-1/4 xxs:px-3 mb-4 z-10" data-aos="fade-up" data-aos-duration="1000">
         <img class="myImg w-full lg:max-w-xs cursor-pointer hover:opacity-75" src=${photo.strDrinkThumb} alt="image_${photo.idDrink}">
       </div>`
-    });
+    };
     document.getElementById("photos").innerHTML = content;
 
-    // Get the modal
+// Get the modal elements
     var modal = document.getElementById("myModal");
-
-    // Get the image and insert it inside the modal 
     var modalImg = document.getElementById("img01");
-    var img = document.getElementsByClassName("myImg");
-    // console.log(img);
-   
-    var i;
-    for (i = 0; i < img.length; i++) {
-      img[i].onclick = function(){
+    var images = document.getElementsByClassName("myImg");
+    var span = document.getElementById("close");
+
+// Loop over images and insert src attribute to modal image
+    for (image of images) {
+      image.onclick = function(){
         modal.classList.add("block");
         modal.classList.remove("hidden");
         modalImg.src = this.src;
       }
     }
-   
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
-      modal.classList.add("hidden");
-      modal.classList.remove("block");
-    }
-  })
-  .catch((err) => 
-    console.log(err));
+//Close the modal
+      span.onclick = function() { 
+        modal.classList.add("hidden");
+        modal.classList.remove("block");
+      }
   }
 
 fetchPhotos();
+}, 3000);
+
+ //Initialize animate on scroll
+AOS.init();
+
+//Authorizing Google Photos
+  // var GoogleAuth;
+  // var SCOPE = 'https://www.googleapis.com/auth/photoslibrary.readonly';
+  // function handleClientLoad() {
+  //   // Load the API's client and auth2 modules.
+  //   // Call the initClient function after the modules load.
+  //   gapi.load('client:auth2', initClient);
+  // }
+
+  // function initClient() {
+  //   // Initialize the gapi.client object, which app uses to make API requests.
+  //   // Get API key and client ID from API Console.
+  //   // 'scope' field specifies space-delimited list of access scopes.
+  //   gapi.client.init({
+  //       'apiKey': 'YOUR_API_KEY',
+  //       'clientId': 'Y860850718132-9530v1bhvqo71qhm689r6aabprrjvgn2.apps.googleusercontent.com',
+  //       'scope': SCOPE
+  //   }).then(function () {
+  //     GoogleAuth = gapi.auth2.getAuthInstance();
+
+  //     // Listen for sign-in state changes.
+  //     GoogleAuth.isSignedIn.listen(updateSigninStatus);
+
+  //     // Handle initial sign-in state. (Determine if user is already signed in.)
+  //     var user = GoogleAuth.currentUser.get();
+  //     setSigninStatus();
+
+  //     // Call handleAuthClick function when user clicks on
+  //     //      "Sign In/Authorize" button.
+  //     $('#sign-in-or-out-button').click(function() {
+  //       handleAuthClick();
+  //     }); 
+  //     $('#revoke-access-button').click(function() {
+  //       revokeAccess();
+  //     }); 
+  //   });
+  // }
+
+  // function handleAuthClick() {
+  //   if (GoogleAuth.isSignedIn.get()) {
+  //     // User is authorized and has clicked 'Sign out' button.
+  //     GoogleAuth.signOut();
+  //   } else {
+  //     // User is not signed in. Start Google auth flow.
+  //     GoogleAuth.signIn();
+  //   }
+  // }
+
+  // function revokeAccess() {
+  //   GoogleAuth.disconnect();
+  // }
+
+  // function setSigninStatus(isSignedIn) {
+  //   var user = GoogleAuth.currentUser.get();
+  //   var isAuthorized = user.hasGrantedScopes(SCOPE);
+  //   if (isAuthorized) {
+  //     $('#sign-in-or-out-button').html('Sign out');
+  //     $('#revoke-access-button').css('display', 'inline-block');
+  //     $('#auth-status').html('You are currently signed in and have granted ' +
+  //         'access to this app.');
+  //   } else {
+  //     $('#sign-in-or-out-button').html('Sign In/Authorize');
+  //     $('#revoke-access-button').css('display', 'none');
+  //     $('#auth-status').html('You have not authorized this app or you are ' +
+  //         'signed out.');
+  //   }
+  // }
+
+  // function updateSigninStatus(isSignedIn) {
+  //   setSigninStatus();
+  // }
+
+
 
 
 

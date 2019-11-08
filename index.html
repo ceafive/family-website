@@ -2306,6 +2306,7 @@
 </section>
 
 <section id="landing" class="bg-appteal text-white border-double border-8 border-appgold h-screen hidden">
+<!-- Navigation -->
 <div class="sticky font-body top-0 z-40 text-white">
   <nav class="flex flex-wrap justify-between xxs:py-2">
     <div class="cursor-pointer xxs:ml-5">
@@ -2325,7 +2326,15 @@
     </div>
   </nav>
 </div>
-<div class="flex flex-wrap xxs:pt-2 xs:pt-16 md:pt-24 xl:pt-12">
+
+<!-- Main One -->
+<div class="text-right font-body tracking-widest leading-none">
+    <span id="city"></span>
+    <span id="temperature"></span><span>&#176;</span><span>C</span>
+    <span id=condition class="capitalize"></span>
+</div>
+
+<div id="main" class="flex flex-wrap xxs:pt-2 xs:pt-16 md:pt-24 xl:pt-12">
 	  <h1 class="flex w-full justify-center font-body xxs:tracking-widest xl:tracking-loose leading-none uppercase">&dash; Save The Date &dash;</h1>
 	  <h1 class="flex w-full justify-center font-body tracking-widest leading-none uppercase xxs:text-5xl md:text-6xl lg:text-8xl xs:pt-3 lg:pt-6 animated zoomIn delay-1s">Eyram</h1>
 	  <div class="flex w-full justify-center">
@@ -2340,19 +2349,17 @@
     </h1>
 </div>
 
-<div class="flex flex-wrap font-body text-white tracking-tighter leading-none xxs:text-3xl xs:text-2xl lg:text-4xl xs:pt-6 md:pt-12 animated slideInUp">
+<div id="clock" class="flex flex-wrap font-body text-white tracking-tighter leading-none xxs:text-3xl xs:text-2xl lg:text-4xl xs:pt-6 md:pt-12 animated slideInUp">
     <div id="days" class="flex justify-center xxs:w-full md:w-1/4"><span class="font-black text-appgold xxs:text-6xl md:text-8xl xl:text-10xl animated zoomIn delay-1s"></span><span class="pl-4"></span></div>
     <div id="hours" class="flex justify-center xxs:w-full md:w-1/4"><span class="font-extrabold text-appgold xxs:text-6xl md:text-8xl xl:text-10xl animated zoomIn delay-1s"></span><span class="pl-4"></span></div>
     <div id="minutes" class="flex justify-center xxs:w-full md:w-1/4"><span class="font-extrabold text-appgold xxs:text-6xl md:text-8xl xl:text-10xl animated zoomIn delay-1s"></span><span class="pl-4"></span></div>
     <div id="seconds" class="flex justify-center xxs:w-full md:w-1/4"><span class="font-extrabold text-appgold xxs:text-6xl md:text-8xl xl:text-10xl animated zoomIn delay-1s"></span><span class="pl-4"></span></div>
 </div>
 
-<div class="flex justify-center font-body text-white tracking-tighter leading-none text-4xl xxs:pt-2 md:pt-12">
-    <a href="#"><button class="xxs:text-xl lg:text-3xl py-2 px-4 border border-appgold focus:outline-none shadow-xl animated pulse delay-2s">
-     Click Here To RSVP!
-    </button></a>
-    <audio src="/resources/data/background.mp3" muted>
-    </audio>
+<div id="last" class="flex justify-center font-body text-white tracking-tighter leading-none text-4xl xxs:pt-2 md:pt-12">
+    <a id="link" href="#" target="_blank" rel="noreferrer"><button id="button" class="xxs:text-xl lg:text-3xl py-2 px-4 border border-appgold focus:outline-none shadow-xl animated pulse delay-2s">
+     Click Here To RSVP!</button></a>
+    <audio id="media" src="/resources/data/background.mp3" muted></audio>
 </div>
 
 <!-- Markup for flying birds animated using CSS -->

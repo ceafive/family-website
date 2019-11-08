@@ -303,7 +303,7 @@
   }
 }
 
-#bg_text h1 {
+#bg_text {
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
 }

@@ -1,26 +1,16 @@
 // Declaring variables
 const initial =  document.getElementById('initial'),
       landing =  document.getElementById('landing'),
-      main = landing.children[1],
-      clock = landing.children[2],
-      last = landing.children[3],
-      link = last.children[0],
-      button = last.children[0].children[0],
-      media = last.children[1];
+      main = document.getElementById('main'),
+      clock = document.getElementById('clock'),
+      last = document.getElementById('last'),
+      link = document.getElementById('link'),
+      button = document.getElementById('button'),
+      media = document.getElementById('media');
 //
      
-//Logic for playing audio when Button is clicked
-function audioLogic() {
-  media.play();
-  media.muted = false;
-  console.log("audio playing")
-  alert("Not yet active, check back again soon!")
-}
-button.addEventListener("click", audioLogic);
-//
-
 //Adding animation to first section after 4secs
-  initial.classList.add('animated', 'zoomOut');
+initial.classList.add('animated', 'zoomOut');
 //
 
 //Adding 4.6secs timeout before applying hidden and block classes to sections
@@ -31,12 +21,22 @@ button.addEventListener("click", audioLogic);
   }, 4600);
 //
 
+//Logic for playing audio when Button is clicked
+function audioLogic() {
+  media.play();
+  media.muted = false;
+  console.log("audio playing")
+  alert("Not yet active, check back again soon!")
+}
+button.addEventListener("click", audioLogic);
+//
+
 //Adding countdown timer to Section landing
 const second = 1000,
       minute = second * 60,
       hour = minute * 60,
       day = hour * 24,
-      countDown = new Date('Dec 14, 2019 11:00:00').getTime(),
+      countDown = new Date('Nov 14, 2019 11:00:00').getTime(),
 
     x = setInterval(function() {
     const now = new Date().getTime(),
@@ -50,7 +50,7 @@ const second = 1000,
           hours = document.getElementById('hours'),
           minutes = document.getElementById('minutes'),
           seconds = document.getElementById('seconds');
-
+          console.log(daysDisplay);
 //Inputting countdown into div with ID clock //
           days.children[0].innerText = daysDisplay;
           hours.children[0].innerText = hoursDisplay;
@@ -112,12 +112,12 @@ const second = 1000,
     
 //Logic for changing navigation icon when on mobile view (choosing which svg to display)
   const icon = document.getElementsByClassName("icon");
-  const nav = document.getElementsByClassName("nav");
-  const toggle = document.getElementsByClassName("toggle");
+  const nav = document.getElementsByClassName("nav")[0];
+  const toggle = document.getElementsByClassName("toggle")[0];
   
   
-  toggle[0].addEventListener("click", function(){ 
-      if(nav[0].style.display == "none" || nav[0].style.display == ""){
+  toggle.addEventListener("click", function(){ 
+      if(nav.style.display == "none" || nav.style.display == ""){
           icon[0].classList.add("hidden");
           icon[0].classList.remove("block");
           icon[1].classList.add("block");
@@ -129,6 +129,30 @@ const second = 1000,
           icon[1].classList.remove("block");
       }
   });
+
+
+  //Logic for displaying weather
+  async function fetchWeather(){
+    const CITY_ID = '2306104';
+    const APP_ID = '2a563656d98bc5b38c869a2cf6dd2a81';
+    const res = await fetch(`http://api.openweathermap.org/data/2.5/weather?id=${CITY_ID}&units=metric&appid=${APP_ID}`);
+    const data = await res.json();
+    const weather = data;
+    console.log(weather);
+
+    const city =  document.getElementById('city'),
+          condition =  document.getElementById('condition'),
+          temperature =  document.getElementById('temperature');
+
+  //Rendering 
+  city.innerText = weather.name;
+  temperature.innerText = Math.floor(weather.main.temp);
+  condition.innerText = weather.weather[0].description;
+  }
+  
+
+  
+  fetchWeather();
 
  //Logic for sending whatsapp messages when web.whatsapp.com is open
  /* 
