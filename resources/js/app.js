@@ -135,7 +135,7 @@ const second = 1000,
   async function fetchWeather(){
     const CITY_ID = '2306104';
     const APP_ID = '2a563656d98bc5b38c869a2cf6dd2a81';
-    const res = await fetch(`http://api.openweathermap.org/data/2.5/weather?id=${CITY_ID}&units=metric&appid=${APP_ID}`);
+    const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?id=${CITY_ID}&units=metric&appid=${APP_ID}`);
     const data = await res.json();
     const weather = data;
     console.log(weather);
