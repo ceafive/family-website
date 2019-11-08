@@ -12,6 +12,7 @@ module.exports = {
             appgreen: '#4C9D77',    
             white: '#E8E9ED',
             black: {
+              default: '#000',
               lighter: "rgba(0,0,0,0.9)"
             }    
         },

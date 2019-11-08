@@ -2,6 +2,7 @@
 const initial =  document.getElementById('initial'),
       landing =  document.getElementById('landing'),
       main = document.getElementById('main'),
+      directions = document.getElementById('directions'),
       clock = document.getElementById('clock'),
       last = document.getElementById('last'),
       link = document.getElementById('link'),
@@ -40,7 +41,7 @@ const second = 1000,
 
     x = setInterval(function() {
     const now = new Date().getTime(),
-          distance = countDown - now,
+          distance = countDown - now;
           
           daysDisplay = Math.floor(distance / (day)),
           hoursDisplay = Math.floor((distance % (day)) / (hour)),
@@ -73,11 +74,13 @@ const second = 1000,
     //Logic for running a function when zero days left
           if (daysDisplay <= 0){
             clock.classList.add('hidden');
-            button.innerText = "Directions to Venue!"
+            directions.classList.add('block');
+            directions.classList.remove('hidden');
+            button.innerText = "Directions to Venue"
             link.href = "https://www.google.com/maps/place/5%C2%B032'59.0%22N+0%C2%B014'02.0%22W/@5.549712,-0.2344212,19z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d5.5497123!4d-0.2338741"
             link.target ="_blank";
             main.classList.add('xxs:pt-32');
-            main.classList.remove('xxs:pt-2', 'xs:pt-16', 'md:pt-24', 'xl:pt-12');
+            main.classList.remove('xxs:pt-2', 'xs:pt-16', 'md:pt-24');
     //Function to stop countdown
             clearInterval(x);
     }
@@ -123,15 +126,20 @@ const second = 1000,
     const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?id=${CITY_ID}&units=metric&appid=${APP_ID}`);
     const data = await res.json();
     const weather = data;
+    console.log(weather);
 
   //Rendering 
-  const city =  document.getElementById('city'),
-        condition =  document.getElementById('condition'),
-        temperature =  document.getElementById('temperature');
+  const temperature =  document.getElementById('temperature'),
+        degrees = Math.floor(weather.main.temp);
 
-  city.innerText = weather.name;
-  temperature.innerText = Math.floor(weather.main.temp);
-  condition.innerText = weather.weather[0].description;
+  if (degrees >= 25) {
+    temperature.innerHTML = `<span>Sunny </span>${degrees}<span>&#176;</span><span>C</span>`; 
+    temperature.classList.add('bg-red-600');
+  
+  } else {
+    temperature.innerHTML = `<span>Cool </span>${degrees}<span>&#176;</span><span>C</span>`;
+    temperature.classList.add('bg-green-600');
+  }
   }
   
   fetchWeather();
