@@ -15,6 +15,7 @@ code.addEventListener('keypress', function (e) {
     if (key === 13 && code.value === "260688") { 
         code.classList.add('hidden')
         code.classList.remove('block')
+        code.value = ""
         map_tag.removeEventListener('click', mapDisplay)
         map_tag.innerText = "Click map to open Google Maps"
         map_tag.classList.remove('xxs:mt-16', 'xl:mt-40')
