@@ -21,5 +21,7 @@ code.addEventListener('keypress', function (e) {
         map_tag.classList.remove('xxs:mt-16', 'xl:mt-56')
         map.classList.remove('hidden')
         map.classList.add('block')
+    }else {
+        alert("Wrong Code Entered")
     }
 });
