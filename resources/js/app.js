@@ -134,11 +134,11 @@ const second = 1000,
         degrees = Math.floor(weather.main.temp);
 
   if (degrees >= 25) {
-    temperature.innerHTML = `<span>Hot </span>${degrees}<span>&#176;</span><span>C</span>`; 
+    temperature.innerHTML = `<span>Temp: </span>${degrees}<span>&#176;</span><span>C</span>`; 
     temperature.classList.add('bg-red-600');
   
   } else {
-    temperature.innerHTML = `<span>Cool </span>${degrees}<span>&#176;</span><span>C</span>`;
+    temperature.innerHTML = `<span>Temp: </span>${degrees}<span>&#176;</span><span>C</span>`;
     temperature.classList.add('bg-green-600');
   }
   }
