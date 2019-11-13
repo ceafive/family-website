@@ -29,7 +29,8 @@ module.exports = {
             '128': '32rem',
         },
         letterSpacing: {
-            loose: '1.1em',
+            loose: '0.5em',
+            looser: '1.1em',
         },
         inset: {
             "15": "15px",
