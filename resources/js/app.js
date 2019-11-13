@@ -98,6 +98,7 @@ const second = 1000,
     });
   });
     
+  
 //Logic for changing navigation icon when on mobile view (choosing which svg to display)
   const icon = document.getElementsByClassName("icon");
   const nav = document.getElementsByClassName("nav")[0];

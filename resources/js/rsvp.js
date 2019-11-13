@@ -3,7 +3,7 @@ const   map_tag = document.getElementById('map-tag'),
         map = document.getElementById('map');
 
 let mapDisplay = () => {
-    map_tag.classList.remove('xxs:mt-16', 'xl:mt-40')
+    map_tag.classList.remove('xxs:mt-16', 'xl:mt-56')
     code.classList.remove('hidden')
     code.classList.add('block')
 }
@@ -18,7 +18,7 @@ code.addEventListener('keypress', function (e) {
         code.value = ""
         map_tag.removeEventListener('click', mapDisplay)
         map_tag.innerText = "Click map to open Google Maps"
-        map_tag.classList.remove('xxs:mt-16', 'xl:mt-40')
+        map_tag.classList.remove('xxs:mt-16', 'xl:mt-56')
         map.classList.remove('hidden')
         map.classList.add('block')
     }
