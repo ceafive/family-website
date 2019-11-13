@@ -64,7 +64,7 @@ const second = 1000,
          
 
     //Logic for running a function when the clock runs down to one month left
-          if (daysDisplay <= 29){
+          if (daysDisplay <= 31){
             button.removeEventListener("click", audioLogic);
     // Logic to make RSVP button active 29 days before
             link.href = "/rsvp.html"
