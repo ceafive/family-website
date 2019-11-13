@@ -3,13 +3,11 @@ module.exports = {
     fontFamily: {
             'display': ['Playfair Display'],
             'body': ['Poiret One'],
-            'landing': ['Sorts Mill Goudy']
     },
     extend: {
         colors: {
             appteal: '#0a1c1c',
             appgold: '#a48623',    
-            appgreen: '#4C9D77',    
             white: '#E8E9ED',
             black: {
               default: '#000',
@@ -21,11 +19,7 @@ module.exports = {
             '10xl': '7rem'
         },
         spacing: {
-            '28': '7.5rem',
-            '68': '18rem',
-            '72': '22rem',
             '80': '24rem',
-            '96': '28rem',
             '128': '32rem',
         },
         letterSpacing: {
