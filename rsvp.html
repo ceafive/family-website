@@ -1,71 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
- 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
-    <link href="resources/css/app.css" rel="stylesheet">
-   <title>Eyram &amp; Esi || RSVP</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+  <link href="resources/css/app.css" rel="stylesheet">
+  <title>Eyram &amp; Esi || RSVP</title>
 </head>
 
 <body id="rsvp" class="font-body border-double border-8 border-appgold antialiased ">
-  
-    <div class="flex flex-wrap xxs:text-xl lg:text-3xl">
-        <div class="xxs:w-full xl:w-1/2 text-white bg-appteal xxs:px-20 xxs:pt-20 xl:pt-32">
-          <a href="/">
-              <svg class="fill-current xxs:h-6 xxs:w-6 lg:h-10 lg:w-10 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M395 96H230c-46.7 0-73.2 34.7-102 63.5s-72.1 74.7-72.1 74.7C51 239.8 48 247 48 255.1c0 8 3 15.3 7.9 21 0 0 34.3 37.6 72.1 75.5 37.8 37.8 56.7 64.5 102 64.5h165c38.5 0 69-32.5 69-71V165c0-38.5-30.5-69-69-69zm-17.7 212.7c6.2 6.2 6.2 16.4 0 22.6-6.2 6.2-16.4 6.2-22.6 0L302 278.6l-52.7 52.7c-6.2 6.2-16.3 6.4-22.6 0-6.4-6.4-6.7-15.9 0-22.6l52.7-52.7-52.7-52.7c-6-6-7.1-15.6 0-22.6 7.1-7.1 16.4-6.2 22.6 0l52.7 52.7 52.7-52.7c6.2-6.2 16.4-6.2 22.6 0 6.2 6.2 6.2 16.4 0 22.6L324.6 256l52.7 52.7z"/></svg>
-          </a>
-          <h1 class="text-center text-5xl tracking-loose pb-10" >RSVP</h1>
-          <form class="w-full" name="rsvp" method="POST" data-netlify="true">
-              <div class="flex flex-wrap">
-                  <div class="w-full pb-4">
-                      <label class="tracking-wide mb-2" for="grid-name">Your Full Name</label>
-                      <input class="appearance-none bg-transparent border-b border-appgold w-full leading-tight focus:outline-none" id="grid-name" name="name" type="text" placeholder="" aria-label="your name" required>
-                  </div>
-                  <div class="w-full pb-4">
-                    <label class="tracking-wide mb-2" for="grid-yes-no">Will You Be Attending?</label>
-                    <div class="relative">
-                      <select class="appearance-none bg-transparent border-b border-appgold w-full leading-tight focus:outline-none" id="grid-yes-no" name="response" required>
-                        <option></option>
-                        <option>Yes</option>
-                        <option>No</option>
-                      </select>
-                      <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-500">
-                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="w-full pb-4">
-                    <label class="tracking-wide mb-2" for="grid-number">Number of People Attending</label>
-                    <div class="relative">
-                      <select class="appearance-none bg-transparent border-b border-appgold w-full leading-tight focus:outline-none" id="grid-number" name="number" type="number" required>
-                        <option>1</option>
-                        <option>2</option>
-                      </select>
-                      <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-500">
-                        <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="w-full pb-4">
-                    <label class="tracking-wide mb-2" for="grid-song">Do You Have A Song Request? Write It Here</label>
-                    <input class="appearance-none bg-transparent border-b border-appgold w-full leading-tight focus:outline-none" id="grid-song" name="song" type="text" placeholder="" aria-label="your song">
-                  </div>
-                  <button class="border border-appgold focus:outline-none shadow-2xl py-2 px-4 my-10" type="submit">
-                  send
-                  </button>
-              </div>
-            </form>  
-        </div>
-        <div class="xxs:w-full xl:w-1/2 font-black text-black text-center bg-white shadow-2xl xxs:px-10 xxs:py-10 xl:px-20 xl:pt-48">
-          <a id="map" class="hidden" href="https://www.google.com/maps/place/5%C2%B032'59.0%22N+0%C2%B014'02.0%22W/@5.549712,-0.2344212,19z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d5.5497123!4d-0.2338741"><img class="border-4 border-appgold" src="/resources/img/location.png" alt="directions"></a>
-          <input id="code" class="xxs:mt-16 xl:mt-56 xxs:ml-10 lg:ml-40 appearance-none bg-transparent border border-appgold xxs:w-3/4 lg:w-1/2 leading-tight tracking-tighter focus:outline-none hidden" type="number" placeholder="Enter 6 digit code">
-          <p id="map-tag" class="xxs:mt-16 xl:mt-56 cursor-pointer">Click here and enter code to show map</p>
-        </div>
-    </div>
 
-<script src="resources/js/rsvp.js"></script>
+  <div class="flex flex-wrap xxs:text-xl lg:text-3xl">
+    <div class="xxs:w-full xl:w-1/2 text-white bg-appteal xxs:px-20 xxs:pt-20 xl:pt-32">
+      <a href="/">
+        <svg class="fill-current xxs:h-6 xxs:w-6 lg:h-10 lg:w-10 text-white" xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512">
+          <path
+            d="M395 96H230c-46.7 0-73.2 34.7-102 63.5s-72.1 74.7-72.1 74.7C51 239.8 48 247 48 255.1c0 8 3 15.3 7.9 21 0 0 34.3 37.6 72.1 75.5 37.8 37.8 56.7 64.5 102 64.5h165c38.5 0 69-32.5 69-71V165c0-38.5-30.5-69-69-69zm-17.7 212.7c6.2 6.2 6.2 16.4 0 22.6-6.2 6.2-16.4 6.2-22.6 0L302 278.6l-52.7 52.7c-6.2 6.2-16.3 6.4-22.6 0-6.4-6.4-6.7-15.9 0-22.6l52.7-52.7-52.7-52.7c-6-6-7.1-15.6 0-22.6 7.1-7.1 16.4-6.2 22.6 0l52.7 52.7 52.7-52.7c6.2-6.2 16.4-6.2 22.6 0 6.2 6.2 6.2 16.4 0 22.6L324.6 256l52.7 52.7z" />
+        </svg>
+      </a>
+      <h1 class="text-center text-5xl tracking-loose pb-10">RSVP</h1>
+      <form class="w-full" name="rsvp" method="POST" data-netlify="true">
+        <div class="flex flex-wrap">
+          <div class="w-full pb-4">
+            <label class="tracking-wide mb-2" for="grid-name">Your Full Name</label>
+            <input
+              class="appearance-none bg-transparent border-b border-appgold w-full leading-tight focus:outline-none"
+              id="grid-name" name="name" type="text" placeholder="" aria-label="your name" required>
+          </div>
+          <div class="w-full pb-4">
+            <label class="tracking-wide mb-2" for="grid-yes-no">Will You Be Attending?</label>
+            <div class="relative">
+              <select
+                class="appearance-none bg-transparent border-b border-appgold w-full leading-tight focus:outline-none"
+                id="grid-yes-no" name="response" required>
+                <option></option>
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-500">
+                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
+              </div>
+            </div>
+          </div>
+          <div class="w-full pb-4">
+            <label class="tracking-wide mb-2" for="grid-number">Number of People Attending</label>
+            <div class="relative">
+              <select
+                class="appearance-none bg-transparent border-b border-appgold w-full leading-tight focus:outline-none"
+                id="grid-number" name="number" type="number" required>
+                <option>1</option>
+                <option>2</option>
+              </select>
+              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-500">
+                <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" /></svg>
+              </div>
+            </div>
+          </div>
+          <div class="w-full pb-4">
+            <label class="tracking-wide mb-2" for="grid-song">Do You Have A Song Request? Write It Here</label>
+            <input
+              class="appearance-none bg-transparent border-b border-appgold w-full leading-tight focus:outline-none"
+              id="grid-song" name="song" type="text" placeholder="" aria-label="your song">
+          </div>
+          <button class="border border-appgold focus:outline-none shadow-2xl py-2 px-4 my-10" type="submit">
+            send
+          </button>
+        </div>
+      </form>
+    </div>
+    <div
+      class="xxs:w-full xl:w-1/2 font-black text-black text-center bg-white shadow-2xl xxs:px-10 xxs:py-10 xl:px-20 xl:pt-48">
+      <a id="map" class="hidden"
+        href="https://www.google.com/maps/place/5%C2%B032'59.0%22N+0%C2%B014'02.0%22W/@5.549712,-0.2344212,19z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d5.5497123!4d-0.2338741"><img
+          class="border-4 border-appgold" src="/resources/img/location.png" alt="directions"></a>
+      <input id="code"
+        class="xxs:mt-16 xl:mt-56 xxs:ml-10 lg:ml-40 appearance-none bg-transparent border border-appgold xxs:w-3/4 lg:w-1/2 leading-tight tracking-tighter focus:outline-none hidden"
+        type="number" placeholder="Enter 6 digit code">
+      <p id="map-tag" class="xxs:mt-16 xl:mt-56 cursor-pointer">Click here and enter code to show map</p>
+    </div>
+  </div>
+
+  <script src="resources/js/rsvp.js"></script>
 </body>
+
 </html>

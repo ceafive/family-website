@@ -1,6 +1,6 @@
-const   map_tag = document.getElementById('map-tag'),
-        code = document.getElementById('code'),
-        map = document.getElementById('map');
+const   map_tag = document.getElementById('map-tag');
+const       code = document.getElementById('code');
+const      map = document.getElementById('map');
 
 let mapDisplay = () => {
     map_tag.classList.remove('xxs:mt-16', 'xl:mt-56')
